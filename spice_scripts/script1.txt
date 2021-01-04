@@ -1,0 +1,40 @@
+.include "PUT MODEL FILE PATH HERE"
+.params Vdd=1 n=0.011U nand=1 a=nand c=3 s=2 inv=4
+vdd vdd gnd dc {Vdd}
+
+vx0 x0 gnd dc 0
+vx1 x1 gnd dc 0
+vx2 x2 gnd dc {Vdd}
+vx3 x3 gnd dc {Vdd}
+vx4 x4 gnd dc 0
+vx5 x5 gnd dc 0
+vx6 x6 gnd dc 0
+vx7 x7 gnd dc 0
+
+vy0 y0 gnd dc 0
+vy1 y1 gnd dc 0
+vy2 y2 gnd dc 0
+vy3 y3 gnd dc 0
+vy4 y4 gnd dc {Vdd}
+vy5 y5 gnd dc 0
+vy6 y6 gnd dc 0
+vy7 y7 gnd dc 0
+
+.meas tran val_z0 find V(z0) at=1.9n
+.meas tran val_z1 find V(z1) at=1.9n
+.meas tran val_z2 find V(z2) at=1.9n
+.meas tran val_z3 find V(z3) at=1.9n
+.meas tran val_z4 find V(z4) at=1.9n
+.meas tran val_z5 find V(z5) at=1.9n
+.meas tran val_z6 find V(z6) at=1.9n
+.meas tran val_z7 find V(z7) at=1.9n
+.meas tran val_z8 find V(z8) at=1.9n
+.meas tran val_z9 find V(z9) at=1.9n
+.meas tran val_z10 find V(z10) at=1.9n
+.meas tran val_z11 find V(z11) at=1.9n
+.meas tran val_z12 find V(z12) at=1.9n
+.meas tran val_z13 find V(z13) at=1.9n
+.meas tran val_z14 find V(z14) at=1.9n
+.meas tran val_z15 find V(z15) at=1.9n
+
+.tran 0 2n UIC
