@@ -6,10 +6,10 @@ Vicon|ic
 Vschematic|sch
 
 # Technologies:
-Tmocmos|MininumCapacitanceINmocmos()D0.01|ScaleFORmocmos()D11.0
+Tmocmos|MininumCapacitanceINmocmos()D0.01|MininumResistanceINmocmos()D0.1|ScaleFORmocmos()D11.0
 
 # Cell CritPath;1{sch}
-CCritPath;1{sch}||schematic|1609473402302|1609474886851|
+CCritPath;1{sch}||schematic|1609473402302|1609479578969|
 Iand2;1{ic}|and2@0||13.5|26.5|RRR||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||25|36|||RR|
@@ -78,7 +78,7 @@ NWire_Pin|pin@43||-106.5|-88||||
 NWire_Pin|pin@44||-104.5|-88||||
 NWire_Pin|pin@45||-123|-89||||
 NWire_Pin|pin@46||-121|-89||||
-Ngeneric:Invisible-Pin|pin@47||-98.5|-29.5|||||SIM_spice_card(D5G1;)S".include \"D:/Study/dic/lib/assignment4/pathan/script1.txt\""
+Ngeneric:Invisible-Pin|pin@47||-98.5|-29.5|||||SIM_spice_card(D5G1;)S".include \"S:/DIC_sims/multiplier/script1.txt\""
 Awire|gnd|D5G1;||2700|fa_X@0|B|2.5|18|pin@7||2.5|24
 Awire|gnd|D5G1;||2700|fa_X@1|B|2.5|3|pin@10||2.5|5.5
 Awire|gnd|D5G1;||2700|fa_X@5|B|2.5|-28.5|pin@15||2.5|-25.5
@@ -6558,7 +6558,7 @@ Ez15||D5G0.75;X1.5;|pin@48||O
 X
 
 # Cell signed_8_bit_CSM_block_level_final_param;1{sch}
-Csigned_8_bit_CSM_block_level_final_param;1{sch}||schematic|1608638714421|1608888659493|
+Csigned_8_bit_CSM_block_level_final_param;1{sch}||schematic|1608638714421|1609479195136|
 Iand2;1{ic}|and2@13||111.5|140|RRR||D5G4;
 Iand2;1{ic}|and2@14||-113.5|140|RRR||D5G4;
 Iand2;1{ic}|and2@15||-112.5|108|RRR||D5G4;
@@ -7819,6 +7819,7 @@ NWire_Pin|pin@1547||110.5|-80||||
 NWire_Pin|pin@1549||-80.5|-91||||
 NWire_Pin|pin@1550||111.5|-97.5||||
 NWire_Pin|pin@1551||100|-84||||
+Ngeneric:Invisible-Pin|pin@1552||-231.5|136|||||SIM_spice_card(D5G1;)S".include \"S:/DIC_sims/multiplier/script2.txt\""
 NPower|pwr@0||100|102.5||||
 NPower|pwr@1||68|102.5||||
 NPower|pwr@2||36|102.5||||
