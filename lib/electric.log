@@ -1,0 +1,22 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Mon Jan 04 12:54:28 IST 2021
+Menu Activated: File | Open Library...
+--------------- 1 --------------
+  Mon Jan 04 12:55:20 IST 2021
+Menu Activated: File | Preferences...
+--------------- 2 --------------
+  Mon Jan 04 12:55:53 IST 2021
+Menu Activated: File | Open Library...
+--------------- 3 --------------
+  Mon Jan 04 12:56:24 IST 2021
+ProcessKeyBinding 401 when=1609745184804 modifiers=80 code=11 char=ffff false false
+--------------- 4 --------------
+  Mon Jan 04 12:56:25 IST 2021
+Menu Activated: File | Save All Libraries
+--------------- 5 --------------
+  Mon Jan 04 12:56:25 IST 2021
+ProcessKeyBinding 400 when=1609745184996 modifiers=80 code=0 char=13 false false
+--------------- 6 --------------
+  Mon Jan 04 12:56:25 IST 2021
+ProcessKeyBinding 402 when=1609745185183 modifiers=0 code=11 char=ffff false false
