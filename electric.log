@@ -1,0 +1,40 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Tue Jan 05 21:50:43 IST 2021
+ProcessKeyBinding 401 when=1609863643283 modifiers=200 code=12 char=ffff false false
+--------------- 1 --------------
+  Tue Jan 05 21:51:58 IST 2021
+Menu Activated: /home/vasid/.git/courses/dic_proj/lib/exp/project.jelib
+--------------- 2 --------------
+  Tue Jan 05 21:52:10 IST 2021
+ProcessKeyBinding 401 when=1609863730680 modifiers=200 code=12 char=ffff false false
+--------------- 3 --------------
+  Tue Jan 05 21:53:03 IST 2021
+Menu Activated: /home/vasid/.git/courses/dic_proj/lib/exp/project.jelib
+--------------- 4 --------------
+  Tue Jan 05 21:53:07 IST 2021
+ProcessKeyBinding 401 when=1609863787511 modifiers=80 code=11 char=ffff false false
+--------------- 5 --------------
+  Tue Jan 05 21:53:11 IST 2021
+ProcessKeyBinding 402 when=1609863791250 modifiers=0 code=11 char=ffff false false
+--------------- 6 --------------
+  Tue Jan 05 21:53:13 IST 2021
+ProcessKeyBinding 401 when=1609863793814 modifiers=200 code=12 char=ffff false false
+--------------- 7 --------------
+  Tue Jan 05 21:53:33 IST 2021
+ProcessKeyBinding 401 when=1609863813509 modifiers=80 code=11 char=ffff false false
+--------------- 8 --------------
+  Tue Jan 05 21:53:33 IST 2021
+Menu Activated: File | Save All Libraries
+--------------- 9 --------------
+  Tue Jan 05 21:53:33 IST 2021
+ProcessKeyBinding 400 when=1609863813696 modifiers=80 code=0 char=13 false false
+--------------- 10 --------------
+  Tue Jan 05 21:53:34 IST 2021
+ProcessKeyBinding 402 when=1609863814118 modifiers=0 code=11 char=ffff false false
+--------------- 11 --------------
+  Tue Jan 05 21:54:17 IST 2021
+ProcessKeyBinding 401 when=1609863856999 modifiers=200 code=12 char=ffff false false
+--------------- 12 --------------
+  Tue Jan 05 21:54:24 IST 2021
+ProcessKeyBinding 401 when=1609863864987 modifiers=200 code=12 char=ffff false false
