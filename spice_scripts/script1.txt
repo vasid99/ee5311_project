@@ -1,4 +1,4 @@
-.include "PUT MODEL FILE PATH HERE"
+.include "/home/vasid/.git/courses/dic_proj/22nm_HP.pm"
 .params Vdd=1 n=0.011U nand=1 a=nand c=3 s=2 inv=4
 vdd vdd gnd dc {Vdd}
 

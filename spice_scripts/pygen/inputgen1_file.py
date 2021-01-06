@@ -9,7 +9,7 @@ except:
 	print("Usage: python inputgen1_file.py x y outfile")
 	exit()
 
-incpath="PUT MODEL FILE PATH HERE"
+incpath="~/.git/dic_proj/22nm_HP.pm"
 xbin=binary_repr(x) if x>=0 else binary_repr(256+x)
 ybin=binary_repr(y) if y>=0 else binary_repr(256+y)
 

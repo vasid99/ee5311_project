@@ -1,0 +1,216 @@
+*** SPICE deck for cell csm_non_pipelined{sch} from library project2
+*** Created on Tue Dec 22, 2020 17:35:14
+*** Last revised on Wed Jan 06, 2021 19:12:54
+*** Written on Wed Jan 06, 2021 19:13:17 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
+
+*** SUBCIRCUIT project2__and1x FROM CELL and1x{sch}
+.SUBCKT project2__and1x A B Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@1 net@13 A net@50 gnd nmos_HP L=0.022U W=0.088U
+Mnmos@2 Y net@13 gnd gnd nmos_HP L=0.022U W=0.044U
+Mnmos@3 net@50 B gnd gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 vdd A net@13 vdd pmos_HP L=0.022U W=0.088U
+Mpmos@1 vdd B net@13 vdd pmos_HP L=0.022U W=0.088U
+Mpmos@3 vdd net@13 Y vdd pmos_HP L=0.022U W=0.088U
+.ENDS project2__and1x
+
+*** SUBCIRCUIT project2__fa_c3x_s2x FROM CELL fa_c3x_s2x{sch}
+.SUBCKT project2__fa_c3x_s2x A B Ci Co_bar S_bar
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@33 B net@40 gnd nmos_HP L=0.022U W=0.132U
+Mnmos@1 S_bar Ci net@33 gnd nmos_HP L=0.022U W=0.132U
+Mnmos@2 net@40 A gnd gnd nmos_HP L=0.022U W=0.132U
+Mnmos@3 net@21 A gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@4 net@21 B gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@5 S_bar Co_bar net@21 gnd nmos_HP L=0.022U W=0.176U
+Mnmos@6 net@21 Ci gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@7 Co_bar Ci net@73 gnd nmos_HP L=0.022U W=0.264U
+Mnmos@8 net@73 A gnd gnd nmos_HP L=0.022U W=0.264U
+Mnmos@9 net@73 B gnd gnd nmos_HP L=0.022U W=0.264U
+Mnmos@10 net@67 A gnd gnd nmos_HP L=0.022U W=0.088U
+Mnmos@11 Co_bar B net@67 gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 net@20 Ci S_bar vdd pmos_HP L=0.022U W=0.264U
+Mpmos@1 net@1 B net@20 vdd pmos_HP L=0.022U W=0.264U
+Mpmos@2 vdd A net@1 vdd pmos_HP L=0.022U W=0.264U
+Mpmos@3 net@25 Co_bar S_bar vdd pmos_HP L=0.022U W=0.352U
+Mpmos@4 vdd A net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@5 vdd B net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@6 vdd Ci net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@7 net@49 Ci Co_bar vdd pmos_HP L=0.022U W=0.528U
+Mpmos@8 vdd A net@49 vdd pmos_HP L=0.022U W=0.528U
+Mpmos@9 vdd B net@49 vdd pmos_HP L=0.022U W=0.528U
+Mpmos@10 vdd A net@62 vdd pmos_HP L=0.022U W=0.176U
+Mpmos@11 net@62 B Co_bar vdd pmos_HP L=0.022U W=0.176U
+.ENDS project2__fa_c3x_s2x
+
+*** SUBCIRCUIT project2__inv1x FROM CELL inv1x{sch}
+.SUBCKT project2__inv1x A Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 Y A gnd gnd nmos_HP L=0.022U W=0.044U
+Mpmos@0 vdd A Y vdd pmos_HP L=0.022U W=0.088U
+.ENDS project2__inv1x
+
+*** SUBCIRCUIT project2__nand1x FROM CELL nand1x{sch}
+.SUBCKT project2__nand1x A B Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@2 Y B net@3 gnd nmos_HP L=0.022U W=0.088U
+Mnmos@4 net@3 A gnd gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 vdd B Y vdd pmos_HP L=0.022U W=0.088U
+Mpmos@2 vdd A Y vdd pmos_HP L=0.022U W=0.088U
+.ENDS project2__nand1x
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: csm_non_pipelined{sch}
+Xand1x@13 x0 y0 z0 project2__and1x
+Xand1x@14 x7 y0 net@886 project2__and1x
+Xand1x@15 x7 y1 net@1085 project2__and1x
+Xand1x@16 x7 y3 net@1261 project2__and1x
+Xand1x@17 x7 y5 net@1437 project2__and1x
+Xand1x@19 x0 y2 net@1096 project2__and1x
+Xand1x@20 x1 y2 net@1107 project2__and1x
+Xand1x@21 x2 y2 net@1118 project2__and1x
+Xand1x@22 x3 y2 net@1129 project2__and1x
+Xand1x@23 x4 y2 net@1140 project2__and1x
+Xand1x@24 x5 y2 net@1151 project2__and1x
+Xand1x@25 x6 y2 net@1162 project2__and1x
+Xand1x@26 x0 y4 net@1272 project2__and1x
+Xand1x@27 x1 y4 net@1283 project2__and1x
+Xand1x@28 x2 y4 net@1294 project2__and1x
+Xand1x@29 x3 y4 net@1305 project2__and1x
+Xand1x@30 x4 y4 net@1316 project2__and1x
+Xand1x@31 x5 y4 net@1327 project2__and1x
+Xand1x@32 x6 y4 net@1338 project2__and1x
+Xand1x@33 x0 y6 net@1448 project2__and1x
+Xand1x@34 x1 y6 net@1459 project2__and1x
+Xand1x@35 x2 y6 net@1470 project2__and1x
+Xand1x@36 x3 y6 net@1481 project2__and1x
+Xand1x@37 x4 y6 net@1492 project2__and1x
+Xand1x@38 x5 y6 net@1503 project2__and1x
+Xand1x@39 x6 y6 net@1514 project2__and1x
+Xand1x@40 x6 y7 net@1602 project2__and1x
+Xand1x@41 x5 y7 net@1591 project2__and1x
+Xand1x@42 x4 y7 net@1580 project2__and1x
+Xand1x@43 x3 y7 net@1569 project2__and1x
+Xand1x@44 x2 y7 net@1558 project2__and1x
+Xand1x@45 x1 y7 net@1547 project2__and1x
+Xand1x@46 x0 y7 net@2522 project2__and1x
+Xfa_c3x_s2x@26 net@999 vdd net@874 net@1003 z1 project2__fa_c3x_s2x
+Xfa_c3x_s2x@90 net@1019 vdd net@876 net@1021 net@1025 project2__fa_c3x_s2x
+Xfa_c3x_s2x@91 net@1030 vdd net@878 net@1032 net@1036 project2__fa_c3x_s2x
+Xfa_c3x_s2x@92 net@1041 vdd net@881 net@1043 net@1047 project2__fa_c3x_s2x
+Xfa_c3x_s2x@93 net@1052 vdd net@882 net@1054 net@1058 project2__fa_c3x_s2x
+Xfa_c3x_s2x@94 net@1063 vdd net@885 net@1065 net@1069 project2__fa_c3x_s2x
+Xfa_c3x_s2x@95 net@1074 vdd net@886 net@1076 net@1080 project2__fa_c3x_s2x
+Xfa_c3x_s2x@96 net@1085 vdd gnd net@1087 net@1091 project2__fa_c3x_s2x
+Xfa_c3x_s2x@97 net@1096 net@1003 net@1025 net@1098 net@1102 project2__fa_c3x_s2x
+Xfa_c3x_s2x@98 net@1107 net@1021 net@1036 net@1109 net@1113 project2__fa_c3x_s2x
+Xfa_c3x_s2x@99 net@1118 net@1032 net@1047 net@1120 net@1124 project2__fa_c3x_s2x
+Xfa_c3x_s2x@100 net@1129 net@1043 net@1058 net@1131 net@1135 project2__fa_c3x_s2x
+Xfa_c3x_s2x@101 net@1140 net@1054 net@1069 net@1142 net@1146 project2__fa_c3x_s2x
+Xfa_c3x_s2x@102 net@1151 net@1065 net@1080 net@1153 net@1157 project2__fa_c3x_s2x
+Xfa_c3x_s2x@103 net@1162 net@1076 net@1091 net@1164 net@1168 project2__fa_c3x_s2x
+Xfa_c3x_s2x@104 net@1173 net@1087 gnd net@1175 net@1179 project2__fa_c3x_s2x
+Xfa_c3x_s2x@105 net@1184 net@1098 net@1113 net@1186 z3 project2__fa_c3x_s2x
+Xfa_c3x_s2x@106 net@1195 net@1109 net@1124 net@1197 net@1201 project2__fa_c3x_s2x
+Xfa_c3x_s2x@107 net@1206 net@1120 net@1135 net@1208 net@1212 project2__fa_c3x_s2x
+Xfa_c3x_s2x@108 net@1217 net@1131 net@1146 net@1219 net@1223 project2__fa_c3x_s2x
+Xfa_c3x_s2x@109 net@1228 net@1142 net@1157 net@1230 net@1234 project2__fa_c3x_s2x
+Xfa_c3x_s2x@110 net@1239 net@1153 net@1168 net@1241 net@1245 project2__fa_c3x_s2x
+Xfa_c3x_s2x@111 net@1250 net@1164 net@1179 net@1252 net@1256 project2__fa_c3x_s2x
+Xfa_c3x_s2x@112 net@1261 net@1175 vdd net@1263 net@1267 project2__fa_c3x_s2x
+Xfa_c3x_s2x@113 net@1272 net@1186 net@1201 net@1274 net@1278 project2__fa_c3x_s2x
+Xfa_c3x_s2x@114 net@1283 net@1197 net@1212 net@1285 net@1289 project2__fa_c3x_s2x
+Xfa_c3x_s2x@115 net@1294 net@1208 net@1223 net@1296 net@1300 project2__fa_c3x_s2x
+Xfa_c3x_s2x@116 net@1305 net@1219 net@1234 net@1307 net@1311 project2__fa_c3x_s2x
+Xfa_c3x_s2x@117 net@1316 net@1230 net@1245 net@1318 net@1322 project2__fa_c3x_s2x
+Xfa_c3x_s2x@118 net@1327 net@1241 net@1256 net@1329 net@1333 project2__fa_c3x_s2x
+Xfa_c3x_s2x@119 net@1338 net@1252 net@1267 net@1340 net@1344 project2__fa_c3x_s2x
+Xfa_c3x_s2x@120 net@1349 net@1263 gnd net@1351 net@1355 project2__fa_c3x_s2x
+Xfa_c3x_s2x@121 net@1360 net@1274 net@1289 net@1362 z5 project2__fa_c3x_s2x
+Xfa_c3x_s2x@122 net@1371 net@1285 net@1300 net@1373 net@1377 project2__fa_c3x_s2x
+Xfa_c3x_s2x@123 net@1382 net@1296 net@1311 net@1384 net@1388 project2__fa_c3x_s2x
+Xfa_c3x_s2x@124 net@1393 net@1307 net@1322 net@1395 net@1399 project2__fa_c3x_s2x
+Xfa_c3x_s2x@125 net@1404 net@1318 net@1333 net@1406 net@1410 project2__fa_c3x_s2x
+Xfa_c3x_s2x@126 net@1415 net@1329 net@1344 net@1417 net@1421 project2__fa_c3x_s2x
+Xfa_c3x_s2x@127 net@1426 net@1340 net@1355 net@1428 net@1432 project2__fa_c3x_s2x
+Xfa_c3x_s2x@128 net@1437 net@1351 vdd net@1439 net@1443 project2__fa_c3x_s2x
+Xfa_c3x_s2x@129 net@1448 net@1362 net@1377 net@1450 net@1454 project2__fa_c3x_s2x
+Xfa_c3x_s2x@130 net@1459 net@1373 net@1388 net@1461 net@1465 project2__fa_c3x_s2x
+Xfa_c3x_s2x@131 net@1470 net@1384 net@1399 net@1472 net@1476 project2__fa_c3x_s2x
+Xfa_c3x_s2x@132 net@1481 net@1395 net@1410 net@1483 net@1487 project2__fa_c3x_s2x
+Xfa_c3x_s2x@133 net@1492 net@1406 net@1421 net@1494 net@1498 project2__fa_c3x_s2x
+Xfa_c3x_s2x@134 net@1503 net@1417 net@1432 net@1505 net@1509 project2__fa_c3x_s2x
+Xfa_c3x_s2x@135 net@1514 net@1428 net@1443 net@1516 net@1520 project2__fa_c3x_s2x
+Xfa_c3x_s2x@136 net@1525 net@1439 gnd net@1527 net@1531 project2__fa_c3x_s2x
+Xfa_c3x_s2x@137 net@2522 net@1450 net@1465 net@1538 z7 project2__fa_c3x_s2x
+Xfa_c3x_s2x@138 net@1547 net@1461 net@1476 net@1549 net@1553 project2__fa_c3x_s2x
+Xfa_c3x_s2x@139 net@1558 net@1472 net@1487 net@1560 net@1564 project2__fa_c3x_s2x
+Xfa_c3x_s2x@140 net@1569 net@1483 net@1498 net@1571 net@1575 project2__fa_c3x_s2x
+Xfa_c3x_s2x@141 net@1580 net@1494 net@1509 net@1582 net@1586 project2__fa_c3x_s2x
+Xfa_c3x_s2x@142 net@1591 net@1505 net@1520 net@1593 net@1597 project2__fa_c3x_s2x
+Xfa_c3x_s2x@143 net@1602 net@1516 net@1531 net@1604 net@1608 project2__fa_c3x_s2x
+Xfa_c3x_s2x@144 net@1613 net@1527 vdd net@1615 net@1619 project2__fa_c3x_s2x
+Xfa_c3x_s2x@145 gnd net@1538 net@1553 net@2046 net@1630 project2__fa_c3x_s2x
+Xfa_c3x_s2x@146 net@2046 net@2026 net@2028 net@1637 z9 project2__fa_c3x_s2x
+Xfa_c3x_s2x@147 net@1637 net@1560 net@1575 net@1648 net@2298 project2__fa_c3x_s2x
+Xfa_c3x_s2x@148 net@1648 net@2031 net@2033 net@1659 z11 project2__fa_c3x_s2x
+Xfa_c3x_s2x@149 net@1659 net@1582 net@1597 net@1670 net@2299 project2__fa_c3x_s2x
+Xfa_c3x_s2x@150 net@1670 net@2036 net@2037 net@1681 z13 project2__fa_c3x_s2x
+Xfa_c3x_s2x@151 net@1681 net@1604 net@1619 net@1692 net@2529 project2__fa_c3x_s2x
+Xfa_c3x_s2x@152 net@1692 net@2040 gnd Cdrop z15 project2__fa_c3x_s2x
+Xinv@0 net@1549 net@2026 project2__inv1x
+Xinv@1 net@1564 net@2028 project2__inv1x
+Xinv@2 net@1571 net@2031 project2__inv1x
+Xinv@3 net@1586 net@2033 project2__inv1x
+Xinv@4 net@1593 net@2036 project2__inv1x
+Xinv@5 net@1608 net@2037 project2__inv1x
+Xinv@6 net@1615 net@2040 project2__inv1x
+Xinv@7 net@1102 z2 project2__inv1x
+Xinv@8 net@1278 z4 project2__inv1x
+Xinv@9 net@1454 z6 project2__inv1x
+Xinv@10 net@1630 z8 project2__inv1x
+Xinv@11 net@2298 z10 project2__inv1x
+Xinv@12 net@2299 z12 project2__inv1x
+Xinv@13 net@2529 z14 project2__inv1x
+Xnand1x@16 x1 y0 net@874 project2__nand1x
+Xnand1x@17 x2 y0 net@876 project2__nand1x
+Xnand1x@18 x3 y0 net@878 project2__nand1x
+Xnand1x@19 x4 y0 net@881 project2__nand1x
+Xnand1x@20 x5 y0 net@882 project2__nand1x
+Xnand1x@21 x6 y0 net@885 project2__nand1x
+Xnand1x@22 x0 y1 net@999 project2__nand1x
+Xnand1x@23 x1 y1 net@1019 project2__nand1x
+Xnand1x@24 x2 y1 net@1030 project2__nand1x
+Xnand1x@25 x3 y1 net@1041 project2__nand1x
+Xnand1x@26 x4 y1 net@1052 project2__nand1x
+Xnand1x@27 x5 y1 net@1063 project2__nand1x
+Xnand1x@28 x6 y1 net@1074 project2__nand1x
+Xnand1x@29 x0 y3 net@1184 project2__nand1x
+Xnand1x@30 x1 y3 net@1195 project2__nand1x
+Xnand1x@31 x2 y3 net@1206 project2__nand1x
+Xnand1x@32 x3 y3 net@1217 project2__nand1x
+Xnand1x@33 x4 y3 net@1228 project2__nand1x
+Xnand1x@34 x5 y3 net@1239 project2__nand1x
+Xnand1x@35 x6 y3 net@1250 project2__nand1x
+Xnand1x@36 x0 y5 net@1360 project2__nand1x
+Xnand1x@37 x1 y5 net@1371 project2__nand1x
+Xnand1x@38 x2 y5 net@1382 project2__nand1x
+Xnand1x@39 x3 y5 net@1393 project2__nand1x
+Xnand1x@40 x4 y5 net@1404 project2__nand1x
+Xnand1x@41 x5 y5 net@1415 project2__nand1x
+Xnand1x@42 x6 y5 net@1426 project2__nand1x
+Xnand1x@50 x7 y2 net@1173 project2__nand1x
+Xnand1x@51 x7 y4 net@1349 project2__nand1x
+Xnand1x@52 x7 y6 net@1525 project2__nand1x
+Xnand1x@53 x7 y7 net@1613 project2__nand1x
+
+* Spice Code nodes in cell cell 'csm_non_pipelined{sch}'
+.include "/home/vasid/.git/courses/dic_proj/spice_scripts/script1.txt"
+.END

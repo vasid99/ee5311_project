@@ -1,0 +1,79 @@
+*** SPICE deck for cell CritPath{sch} from library assign4
+*** Created on Fri Jan 01, 2021 09:26:42
+*** Last revised on Wed Jan 06, 2021 18:56:04
+*** Written on Wed Jan 06, 2021 19:01:08 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
+
+*** SUBCIRCUIT assign4__and2 FROM CELL and2{sch}
+.SUBCKT assign4__and2 A B Y
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 Y net@4 gnd gnd nmos_HP L=0.022U W={a*4*n}
+Mnmos@1 net@4 B net@13 gnd nmos_HP L=0.022U W={a*8*n}
+Mnmos@2 net@13 A gnd gnd nmos_HP L=0.022U W={a*8*n}
+Mpmos@0 vdd net@4 Y vdd pmos_HP L=0.022U W={a*8*n}
+Mpmos@1 vdd B net@4 vdd pmos_HP L=0.022U W={a*8*n}
+Mpmos@2 vdd A net@4 vdd pmos_HP L=0.022U W={a*8*n}
+.ENDS assign4__and2
+
+*** SUBCIRCUIT assign4__fa_X FROM CELL fa_X{sch}
+.SUBCKT assign4__fa_X A B Ci Co_bar S_bar
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@33 B net@6 gnd nmos_HP L=0.022U W=0.132U
+Mnmos@1 S_bar Ci net@33 gnd nmos_hp L=0.022U W=0.132U
+Mnmos@2 net@6 A gnd gnd nmos_HP L=0.022U W=0.132U
+Mnmos@3 net@1 A gnd gnd nmos_HP L=0.022U W={s*8*n}
+Mnmos@4 net@1 B gnd gnd nmos_HP L=0.022U W={s*8*n}
+Mnmos@5 S_bar Co_bar net@1 gnd nmos_HP L=0.022U W={s*8*n}
+Mnmos@6 net@1 Ci gnd gnd nmos_HP L=0.022U W={s*8*n}
+Mnmos@7 Co_bar Ci net@55 gnd nmos_HP L=0.022U W={c*8*n}
+Mnmos@8 net@55 A gnd gnd nmos_HP L=0.022U W={c*8*n}
+Mnmos@9 net@55 B gnd gnd nmos_HP L=0.022U W={c*8*n}
+Mnmos@10 net@48 A gnd gnd nmos_HP L=0.022U W=0.088U
+Mnmos@11 Co_bar B net@48 gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 vdd A net@23 vdd pmos_HP L=0.022U W=0.264U
+Mpmos@1 net@14 Co_bar S_bar vdd pmos_HP L=0.022U W={s*16*n}
+Mpmos@2 vdd A net@14 vdd pmos_HP L=0.022U W={s*16*n}
+Mpmos@3 vdd B net@14 vdd pmos_HP L=0.022U W={s*16*n}
+Mpmos@4 vdd Ci net@14 vdd pmos_HP L=0.022U W={s*16*n}
+Mpmos@5 net@23 B net@25 vdd pmos_HP L=0.022U W=0.264U
+Mpmos@6 net@25 Ci S_bar vdd pmos_HP L=0.022U W=0.264U
+Mpmos@7 net@38 Ci Co_bar vdd pmos_HP L=0.022U W={c*16*n}
+Mpmos@8 vdd A net@38 vdd pmos_HP L=0.022U W={c*16*n}
+Mpmos@9 vdd B net@38 vdd pmos_HP L=0.022U W={c*16*n}
+Mpmos@10 vdd A net@43 vdd pmos_HP L=0.022U W=0.176U
+Mpmos@11 net@43 B Co_bar vdd pmos_HP L=0.022U W=0.176U
+.ENDS assign4__fa_X
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: CritPath{sch}
+Xand2@0 x7 vdd net@11 assign4__and2
+Xfa_X@0 vdd gnd net@11 net@33 net@17 assign4__fa_X
+Xfa_X@1 net@17 gnd gnd net@34 net@19 assign4__fa_X
+Xfa_X@2 fa_X@2_A fa_X@2_B net@33 fa_X@2_Co_bar fa_X@2_S_bar assign4__fa_X
+Xfa_X@3 fa_X@3_A fa_X@3_B net@34 fa_X@3_Co_bar fa_X@3_S_bar assign4__fa_X
+Xfa_X@4 net@19 vdd vdd net@35 net@22 assign4__fa_X
+Xfa_X@5 net@22 gnd gnd net@36 net@25 assign4__fa_X
+Xfa_X@6 fa_X@6_A fa_X@6_B net@35 fa_X@6_Co_bar fa_X@6_S_bar assign4__fa_X
+Xfa_X@7 fa_X@7_A fa_X@7_B net@36 fa_X@7_Co_bar fa_X@7_S_bar assign4__fa_X
+Xfa_X@8 net@25 vdd vdd net@37 net@28 assign4__fa_X
+Xfa_X@9 net@28 gnd gnd net@38 net@31 assign4__fa_X
+Xfa_X@10 fa_X@10_A fa_X@10_B net@37 fa_X@10_Co_bar fa_X@10_S_bar assign4__fa_X
+Xfa_X@11 fa_X@11_A fa_X@11_B net@38 fa_X@11_Co_bar fa_X@11_S_bar assign4__fa_X
+Xfa_X@12 net@31 vdd vdd net@39 net@40 assign4__fa_X
+Xfa_X@13 vdd gnd net@40 net@42 fa_X@13_S_bar assign4__fa_X
+Xfa_X@14 fa_X@14_A fa_X@14_B net@39 fa_X@14_Co_bar fa_X@14_S_bar assign4__fa_X
+Xfa_X@15 vdd gnd net@42 net@63 fa_X@15_S_bar assign4__fa_X
+Xfa_X@22 vdd gnd net@63 net@62 fa_X@22_S_bar assign4__fa_X
+Xfa_X@23 vdd gnd net@62 net@68 fa_X@23_S_bar assign4__fa_X
+Xfa_X@24 vdd gnd net@68 net@64 fa_X@24_S_bar assign4__fa_X
+Xfa_X@25 vdd gnd net@64 net@66 fa_X@25_S_bar assign4__fa_X
+Xfa_X@26 vdd gnd net@66 net@65 fa_X@26_S_bar assign4__fa_X
+Xfa_X@27 vdd gnd net@65 fa_X@27_Co_bar z15 assign4__fa_X
+
+* Spice Code nodes in cell cell 'CritPath{sch}'
+.include "script1.txt"
+.END

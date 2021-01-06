@@ -9,7 +9,7 @@ Vschematic|sch
 Tmocmos|MininumCapacitanceINmocmos()D0.01|MininumResistanceINmocmos()D0.1|ScaleFORmocmos()D11.0
 
 # Cell CritPath;1{sch}
-CCritPath;1{sch}||schematic|1609473402302|1609479578969|
+CCritPath;1{sch}||schematic|1609473402302|1609939564533|
 Iand2;1{ic}|and2@0||13.5|26.5|RRR||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||25|36|||RR|
@@ -78,7 +78,7 @@ NWire_Pin|pin@43||-106.5|-88||||
 NWire_Pin|pin@44||-104.5|-88||||
 NWire_Pin|pin@45||-123|-89||||
 NWire_Pin|pin@46||-121|-89||||
-Ngeneric:Invisible-Pin|pin@47||-98.5|-29.5|||||SIM_spice_card(D5G1;)S".include \"S:/DIC_sims/multiplier/script1.txt\""
+Ngeneric:Invisible-Pin|pin@47||-98.5|-29.5|||||SIM_spice_card(D5G1;)S".include \"script1.txt\""
 Awire|gnd|D5G1;||2700|fa_X@0|B|2.5|18|pin@7||2.5|24
 Awire|gnd|D5G1;||2700|fa_X@1|B|2.5|3|pin@10||2.5|5.5
 Awire|gnd|D5G1;||2700|fa_X@5|B|2.5|-28.5|pin@15||2.5|-25.5

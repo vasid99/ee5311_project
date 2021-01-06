@@ -1,0 +1,85 @@
+Circuit: *** SPICE deck for cell CritPath{sch} from library assign4
+
+WARNING: Node FA_X@2_B is floating.
+WARNING: Node FA_X@2_A is floating.
+WARNING: Node FA_X@3_B is floating.
+WARNING: Node FA_X@3_A is floating.
+WARNING: Node FA_X@6_B is floating.
+WARNING: Node FA_X@6_A is floating.
+WARNING: Node FA_X@7_B is floating.
+WARNING: Node FA_X@7_A is floating.
+WARNING: Node FA_X@10_B is floating.
+WARNING: Node FA_X@10_A is floating.
+WARNING: Node FA_X@11_B is floating.
+WARNING: Node FA_X@11_A is floating.
+WARNING: Node FA_X@14_B is floating.
+WARNING: Node FA_X@14_A is floating.
+
+WARNING: Less than two connections to node X0.  This node is used by VX0.
+WARNING: Less than two connections to node X1.  This node is used by VX1.
+WARNING: Less than two connections to node X2.  This node is used by VX2.
+WARNING: Less than two connections to node X3.  This node is used by VX3.
+WARNING: Less than two connections to node X4.  This node is used by VX4.
+WARNING: Less than two connections to node X5.  This node is used by VX5.
+WARNING: Less than two connections to node X6.  This node is used by VX6.
+WARNING: Less than two connections to node Y0.  This node is used by VY0.
+WARNING: Less than two connections to node Y1.  This node is used by VY1.
+WARNING: Less than two connections to node Y2.  This node is used by VY2.
+WARNING: Less than two connections to node Y3.  This node is used by VY3.
+WARNING: Less than two connections to node Y4.  This node is used by VY4.
+WARNING: Less than two connections to node Y5.  This node is used by VY5.
+WARNING: Less than two connections to node Y6.  This node is used by VY6.
+WARNING: Less than two connections to node Y7.  This node is used by VY7.
+Per .tran options, skipping operating point for transient analysis.
+
+
+Measurement "val_z0" FAIL'ed
+
+Measurement "val_z1" FAIL'ed
+
+Measurement "val_z2" FAIL'ed
+
+Measurement "val_z3" FAIL'ed
+
+Measurement "val_z4" FAIL'ed
+
+Measurement "val_z5" FAIL'ed
+
+Measurement "val_z6" FAIL'ed
+
+Measurement "val_z7" FAIL'ed
+
+Measurement "val_z8" FAIL'ed
+
+Measurement "val_z9" FAIL'ed
+
+Measurement "val_z10" FAIL'ed
+
+Measurement "val_z11" FAIL'ed
+
+Measurement "val_z12" FAIL'ed
+
+Measurement "val_z13" FAIL'ed
+
+Measurement "val_z14" FAIL'ed
+val_z15: v(z15)=0.9998 at 1.9e-009
+
+
+Date: Wed Jan 06 19:01:25 2021
+Total elapsed time: 14.572 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3157
+traniter = 3157
+tranpoints = 1044
+accept = 1044
+rejected = 0
+matrix size = 2451
+fillins = 218
+solver = Normal
+Thread vector: 7450.4/2042.5[4] 694.1/487.3[4] 266.6/158.9[4] 92.4/248.2[1]  2592/500
+Matrix Compiler1: 396.78 KB object code size  666.2/385.3/[209.5]
+Matrix Compiler2: 307.55 KB object code size  293.5/278.6/[148.5]
+
