@@ -3,8 +3,8 @@ ln=0
 b=0
 cp project_kansu3.jelib psed0
 while [ $ln -lt 64 ];do
-	ln1=$(($ln/8))
-	ln2=$(($ln%8))
+	ln1=$(($ln%8))
+	ln2=$(($ln/8))
 	
 	sed "s/Awire|net@[0-9]*\([0-9|]*\)pin@\([0-9|\.\-]*\)nand1x@$ln|Y|\(.*\)/Awire|~x$ln1\y$ln2\1pin@\2nand1x@$ln|Y|\3/" psed$b >psed$((1-$b))
 	b=$((1-$b))
