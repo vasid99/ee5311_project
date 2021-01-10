@@ -1,0 +1,173 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Sun Jan 10 14:19:25 IST 2021
+Menu Activated: /home/vasid/.git/courses/dic_proj/lib/exp/kansu/project_kansu3.jelib
+--------------- 1 --------------
+  Sun Jan 10 14:20:10 IST 2021
+ProcessKeyBinding 401 when=1610268610596 modifiers=80 code=11 char=ffff false false
+--------------- 2 --------------
+  Sun Jan 10 14:20:10 IST 2021
+Menu Activated: File | Save All Libraries
+--------------- 3 --------------
+  Sun Jan 10 14:20:10 IST 2021
+ProcessKeyBinding 400 when=1610268610774 modifiers=80 code=0 char=13 false false
+--------------- 4 --------------
+  Sun Jan 10 14:20:11 IST 2021
+ProcessKeyBinding 402 when=1610268611066 modifiers=0 code=11 char=ffff false false
+--------------- 5 --------------
+  Sun Jan 10 14:20:36 IST 2021
+ProcessKeyBinding 402 when=1610268636049 modifiers=0 code=a char=a false false
+--------------- 6 --------------
+  Sun Jan 10 14:20:37 IST 2021
+ProcessKeyBinding 401 when=1610268637053 modifiers=80 code=11 char=ffff false false
+--------------- 7 --------------
+  Sun Jan 10 14:20:37 IST 2021
+Menu Activated: File | Save All Libraries
+--------------- 8 --------------
+  Sun Jan 10 14:20:37 IST 2021
+ProcessKeyBinding 400 when=1610268637257 modifiers=80 code=0 char=13 false false
+--------------- 9 --------------
+  Sun Jan 10 14:20:37 IST 2021
+ProcessKeyBinding 402 when=1610268637522 modifiers=0 code=11 char=ffff false false
+--------------- 10 --------------
+  Sun Jan 10 14:20:44 IST 2021
+ProcessKeyBinding 401 when=1610268644673 modifiers=80 code=11 char=ffff false false
+--------------- 11 --------------
+  Sun Jan 10 14:20:45 IST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'sta_char_and{sch}': and1x{ic}['and1x@0']
+--------------- 12 --------------
+  Sun Jan 10 14:20:45 IST 2021
+ProcessKeyBinding 400 when=1610268645029 modifiers=80 code=0 char=a false false
+--------------- 13 --------------
+  Sun Jan 10 14:20:45 IST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'sta_char_and{sch}': and1x{ic}['and1x@0']
+--------------- 14 --------------
+  Sun Jan 10 14:20:45 IST 2021
+ProcessKeyBinding 400 when=1610268645207 modifiers=80 code=0 char=a false false
+--------------- 15 --------------
+  Sun Jan 10 14:20:45 IST 2021
+Menu Activated: Edit | Rotate | 90 Degrees Counterclockwise
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'sta_char_and{sch}': and1x{ic}['and1x@0']
+--------------- 16 --------------
+  Sun Jan 10 14:20:45 IST 2021
+ProcessKeyBinding 400 when=1610268645370 modifiers=80 code=0 char=a false false
+--------------- 17 --------------
+  Sun Jan 10 14:20:45 IST 2021
+ProcessKeyBinding 402 when=1610268645506 modifiers=0 code=11 char=ffff false false
+--------------- 18 --------------
+  Sun Jan 10 14:20:56 IST 2021
+ProcessKeyBinding 401 when=1610268656289 modifiers=480 code=11 char=ffff false false
+--------------- 19 --------------
+  Sun Jan 10 14:20:57 IST 2021
+ProcessKeyBinding 402 when=1610268657277 modifiers=0 code=11 char=ffff false false
+--------------- 20 --------------
+  Sun Jan 10 14:21:01 IST 2021
+ProcessKeyBinding 402 when=1610268661820 modifiers=0 code=a char=a false false
+--------------- 21 --------------
+  Sun Jan 10 14:21:02 IST 2021
+ProcessKeyBinding 401 when=1610268662161 modifiers=80 code=11 char=ffff false false
+--------------- 22 --------------
+  Sun Jan 10 14:21:02 IST 2021
+Menu Activated: File | Save All Libraries
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'sta_char_and{sch}': wire['A_in']
+--------------- 23 --------------
+  Sun Jan 10 14:21:02 IST 2021
+ProcessKeyBinding 400 when=1610268662247 modifiers=80 code=0 char=13 false false
+--------------- 24 --------------
+  Sun Jan 10 14:21:02 IST 2021
+ProcessKeyBinding 402 when=1610268662398 modifiers=0 code=11 char=ffff false false
+--------------- 25 --------------
+  Sun Jan 10 14:21:14 IST 2021
+ProcessKeyBinding 401 when=1610268674618 modifiers=80 code=11 char=ffff false false
+--------------- 26 --------------
+  Sun Jan 10 14:21:15 IST 2021
+ProcessKeyBinding 402 when=1610268675335 modifiers=0 code=11 char=ffff false false
+--------------- 27 --------------
+  Sun Jan 10 14:21:15 IST 2021
+ProcessKeyBinding 401 when=1610268675864 modifiers=80 code=11 char=ffff false false
+--------------- 28 --------------
+  Sun Jan 10 14:21:16 IST 2021
+ProcessKeyBinding 402 when=1610268676760 modifiers=0 code=11 char=ffff false false
+--------------- 29 --------------
+  Sun Jan 10 14:21:17 IST 2021
+ProcessKeyBinding 401 when=1610268677008 modifiers=40 code=10 char=ffff false false
+--------------- 30 --------------
+  Sun Jan 10 14:21:20 IST 2021
+ProcessKeyBinding 402 when=1610268680033 modifiers=0 code=10 char=ffff false false
+--------------- 31 --------------
+  Sun Jan 10 14:21:31 IST 2021
+ProcessKeyBinding 401 when=1610268691732 modifiers=80 code=11 char=ffff false false
+--------------- 32 --------------
+  Sun Jan 10 14:21:32 IST 2021
+ProcessKeyBinding 402 when=1610268692257 modifiers=0 code=11 char=ffff false false
+--------------- 33 --------------
+  Sun Jan 10 14:21:33 IST 2021
+ProcessKeyBinding 401 when=1610268693322 modifiers=80 code=11 char=ffff false false
+--------------- 34 --------------
+  Sun Jan 10 14:21:34 IST 2021
+ProcessKeyBinding 402 when=1610268694062 modifiers=0 code=11 char=ffff false false
+--------------- 35 --------------
+  Sun Jan 10 14:21:59 IST 2021
+ProcessKeyBinding 401 when=1610268719625 modifiers=80 code=11 char=ffff false false
+--------------- 36 --------------
+  Sun Jan 10 14:21:59 IST 2021
+Menu Activated: File | Save All Libraries
+Currently highlighted: 
+    com.sun.electric.tool.user.HighlightEOBJ in cell 'sta_char_and{sch}': wire['Y_out']
+--------------- 37 --------------
+  Sun Jan 10 14:21:59 IST 2021
+ProcessKeyBinding 400 when=1610268719754 modifiers=80 code=0 char=13 false false
+--------------- 38 --------------
+  Sun Jan 10 14:21:59 IST 2021
+ProcessKeyBinding 402 when=1610268719896 modifiers=0 code=11 char=ffff false false
+--------------- 39 --------------
+  Sun Jan 10 14:22:00 IST 2021
+ProcessKeyBinding 401 when=1610268720071 modifiers=200 code=12 char=ffff false false
+--------------- 40 --------------
+  Sun Jan 10 14:22:13 IST 2021
+ProcessKeyBinding 401 when=1610268733729 modifiers=80 code=11 char=ffff false false
+--------------- 41 --------------
+  Sun Jan 10 14:22:13 IST 2021
+Menu Activated: Edit | Copy
+Currently highlighted: 
+    SPICE code
+--------------- 42 --------------
+  Sun Jan 10 14:22:14 IST 2021
+ProcessKeyBinding 400 when=1610268733981 modifiers=80 code=0 char=3 false false
+--------------- 43 --------------
+  Sun Jan 10 14:22:14 IST 2021
+ProcessKeyBinding 402 when=1610268734183 modifiers=0 code=11 char=ffff false false
+--------------- 44 --------------
+  Sun Jan 10 14:22:15 IST 2021
+ProcessKeyBinding 401 when=1610268735939 modifiers=80 code=11 char=ffff false true
+--------------- 45 --------------
+  Sun Jan 10 14:22:16 IST 2021
+ProcessKeyBinding 402 when=1610268736369 modifiers=0 code=11 char=ffff false true
+--------------- 46 --------------
+  Sun Jan 10 14:22:26 IST 2021
+ProcessKeyBinding 401 when=1610268746362 modifiers=80 code=11 char=ffff false true
+--------------- 47 --------------
+  Sun Jan 10 14:22:26 IST 2021
+ProcessKeyBinding 402 when=1610268746702 modifiers=0 code=11 char=ffff false true
+--------------- 48 --------------
+  Sun Jan 10 14:22:29 IST 2021
+ProcessKeyBinding 401 when=1610268749028 modifiers=80 code=11 char=ffff false false
+--------------- 49 --------------
+  Sun Jan 10 14:22:29 IST 2021
+ProcessKeyBinding 402 when=1610268749504 modifiers=0 code=11 char=ffff false false
+--------------- 50 --------------
+  Sun Jan 10 14:22:35 IST 2021
+ProcessKeyBinding 402 when=1610268754990 modifiers=0 code=8 char=8 false true
+--------------- 51 --------------
+  Sun Jan 10 14:22:35 IST 2021
+ProcessKeyBinding 402 when=1610268755129 modifiers=0 code=8 char=8 false true
+--------------- 52 --------------
+  Sun Jan 10 14:22:35 IST 2021
+ProcessKeyBinding 401 when=1610268755277 modifiers=0 code=41 char=61(a) false true
+--------------- 53 --------
