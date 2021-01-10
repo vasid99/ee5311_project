@@ -1,7 +1,7 @@
 *** SPICE deck for cell sta_char_fa_vmerge1{sch} from library project_kansu3
 *** Created on Sat Jan 09, 2021 18:52:17
-*** Last revised on Sun Jan 10, 2021 19:48:55
-*** Written on Sun Jan 10, 2021 19:54:24 by Electric VLSI Design System, version 9.07
+*** Last revised on Sun Jan 10, 2021 21:47:34
+*** Written on Sun Jan 10, 2021 22:01:04 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
 
@@ -76,5 +76,5 @@ Xdut_1 dut_1_A Co_bar_out dut_1_Ci dut_1_Co_bar dut_1_S_bar project_kansu3__fa_c
 XstaticFF@0 vdd S_bar_out staticFF@0_Y project_kansu3__staticFF
 
 * Spice Code nodes in cell cell 'sta_char_fa_vmerge1{sch}'
-.include "/home/vasid/.git/courses/dic_proj/spice_scripts/vmerge1_characterize/script1.txt"
+.include "/home/vasid/.git/courses/dic_proj/spice_scripts/vmerge_characterize/script1.txt"
 .END
