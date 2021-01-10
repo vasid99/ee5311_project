@@ -1,0 +1,96 @@
+*** SPICE deck for cell and1x{lay} from library project_arshad
+*** Created on Tue Nov 03, 2020 22:08:37
+*** Last revised on Sun Jan 10, 2021 22:53:45
+*** Written on Sun Jan 10, 2021 22:53:57 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
+***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    N-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=3.0ohms/sq
+***    Polysilicon-1:	areacap=0.1467FF/um^2,	edgecap=0.0608FF/um,	res=6.2ohms/sq
+***    Polysilicon-2:	areacap=1.0FF/um^2,	edgecap=0.0FF/um,	res=50.0ohms/sq
+***    Transistor-Poly:	areacap=0.09FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Poly-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.2ohms/sq
+***    Active-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Metal-1:	areacap=0.1209FF/um^2,	edgecap=0.1104FF/um,	res=0.078ohms/sq
+***    Via1:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+***    Metal-2:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via2:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.9ohms/sq
+***    Metal-3:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via3:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-4:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via4:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-5:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via5:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
+***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+
+*** SUBCIRCUIT and1x FROM CELL and1x{lay}
+.SUBCKT and1x A B gnd vdd Y
+Mnmos@8 gnd A#3nmos@8_poly-left net@230 gnd nmos_HP L=0.022U W=0.088U AS=0.003P AD=0.005P PS=0.154U PD=0.275U
+Mnmos@9 net@230 B#1pin@103_polysilicon-1 net@210#3contact@60_metal-1-n-act gnd nmos_HP L=0.022U W=0.088U AS=0.004P AD=0.003P PS=0.205U PD=0.154U
+Mnmos@10 gnd net@210#12nmos@10_poly-left Y#4contact@80_metal-1-n-act gnd nmos_HP L=0.022U W=0.044U AS=0.004P AD=0.005P PS=0.269U PD=0.275U
+Mpmos@7 vdd A#1pmos@7_poly-right net@210 vdd pmos_HP L=0.022U W=0.088U AS=0.004P AD=0.006P PS=0.205U PD=0.304U
+Mpmos@8 net@210 B#4pmos@8_poly-right vdd vdd pmos_HP L=0.022U W=0.088U AS=0.006P AD=0.004P PS=0.304U PD=0.205U
+Mpmos@9 vdd net@210#14pmos@9_poly-right Y#0contact@76_metal-1-p-act vdd pmos_HP L=0.022U W=0.088U AS=0.004P AD=0.006P PS=0.269U PD=0.304U
+** Extracted Parasitic Capacitors ***
+C0 net@210#3contact@60_metal-1-n-act 0 0.024fF
+C1 A#0contact@71_metal-1-polysilicon-1 0 0.018fF
+C2 B#0contact@72_metal-1-polysilicon-1 0 0.015fF
+C3 Y#0contact@76_metal-1-p-act 0 0.021fF
+C4 net@210#8pin@116_metal-2 0 0.014fF
+C5 Y#4contact@80_metal-1-n-act 0 0.016fF
+C6 B#2pin@104_metal-1 0 0.023fF
+C7 B 0 0.014fF
+C8 A 0 0.013fF
+C9 net@210#5pin@114_metal-2 0 0.028fF
+C10 net@210#7pin@115_metal-2 0 0.044fF
+C11 Y#2pin@122_metal-1 0 0.035fF
+C12 Y#3pin@125_metal-1 0 0.024fF
+** Extracted Parasitic Resistors ***
+R0 B#0contact@72_metal-1-polysilicon-1 B#0contact@72_metal-1-polysilicon-1##0 7.75
+R1 B#0contact@72_metal-1-polysilicon-1##0 B#0contact@72_metal-1-polysilicon-1##1 7.75
+R2 B#0contact@72_metal-1-polysilicon-1##1 B#0contact@72_metal-1-polysilicon-1##2 7.75
+R3 B#0contact@72_metal-1-polysilicon-1##2 B#1pin@103_polysilicon-1 7.75
+R4 B#0contact@72_metal-1-polysilicon-1 B#2pin@104_metal-1 0.137
+R5 B#2pin@104_metal-1 B 0.224
+R6 A#0contact@71_metal-1-polysilicon-1 A 0.205
+R7 net@210 net@210#5pin@114_metal-2 0.166
+R8 net@210#5pin@114_metal-2 net@210#7pin@115_metal-2 0.332
+R9 net@210#7pin@115_metal-2 net@210#3contact@60_metal-1-n-act 0.332
+R10 net@210#7pin@115_metal-2 net@210#8pin@116_metal-2 0.127
+R11 A#0contact@71_metal-1-polysilicon-1 A#1pmos@7_poly-right 7.75
+R12 A#0contact@71_metal-1-polysilicon-1 A#0contact@71_metal-1-polysilicon-1##0 8.636
+R13 A#0contact@71_metal-1-polysilicon-1##0 A#0contact@71_metal-1-polysilicon-1##1 8.636
+R14 A#0contact@71_metal-1-polysilicon-1##1 A#0contact@71_metal-1-polysilicon-1##2 8.636
+R15 A#0contact@71_metal-1-polysilicon-1##2 A#0contact@71_metal-1-polysilicon-1##3 8.636
+R16 A#0contact@71_metal-1-polysilicon-1##3 A#0contact@71_metal-1-polysilicon-1##4 8.636
+R17 A#0contact@71_metal-1-polysilicon-1##4 A#0contact@71_metal-1-polysilicon-1##5 8.636
+R18 A#0contact@71_metal-1-polysilicon-1##5 A#3nmos@8_poly-left 8.636
+R19 B#0contact@72_metal-1-polysilicon-1 B#0contact@72_metal-1-polysilicon-1##0 9.3
+R20 B#0contact@72_metal-1-polysilicon-1##0 B#0contact@72_metal-1-polysilicon-1##1 9.3
+R21 B#0contact@72_metal-1-polysilicon-1##1 B#0contact@72_metal-1-polysilicon-1##2 9.3
+R22 B#0contact@72_metal-1-polysilicon-1##2 B#4pmos@8_poly-right 9.3
+R23 Y#0contact@76_metal-1-p-act Y#2pin@122_metal-1 0.322
+R24 Y#2pin@122_metal-1 Y 0.117
+R25 net@210#12nmos@10_poly-left net@210#12nmos@10_poly-left##0 8.99
+R26 net@210#12nmos@10_poly-left##0 net@210#12nmos@10_poly-left##1 8.99
+R27 net@210#12nmos@10_poly-left##1 net@210#12nmos@10_poly-left##2 8.99
+R28 net@210#12nmos@10_poly-left##2 net@210#12nmos@10_poly-left##3 8.99
+R29 net@210#12nmos@10_poly-left##3 net@210#13pin@124_polysilicon-1 8.99
+R30 net@210#13pin@124_polysilicon-1 net@210#13pin@124_polysilicon-1##0 8.525
+R31 net@210#13pin@124_polysilicon-1##0 net@210#13pin@124_polysilicon-1##1 8.525
+R32 net@210#13pin@124_polysilicon-1##1 net@210#13pin@124_polysilicon-1##2 8.525
+R33 net@210#13pin@124_polysilicon-1##2 net@210#14pmos@9_poly-right 8.525
+R34 net@210#13pin@124_polysilicon-1 net@210#13pin@124_polysilicon-1##0 7.233
+R35 net@210#13pin@124_polysilicon-1##0 net@210#13pin@124_polysilicon-1##1 7.233
+R36 net@210#13pin@124_polysilicon-1##1 net@210#8pin@116_metal-2 7.233
+R37 Y#2pin@122_metal-1 Y#3pin@125_metal-1 0.117
+R38 Y#4contact@80_metal-1-n-act Y#3pin@125_metal-1 0.254
+
+* Spice Code nodes in cell cell 'and1x{lay}'
+.include "S:/DIC_sims/22nm_HP_HP.pm"
+.ENDS and1x
+
+
+Xand1x A B gnd vdd Y and1x
+
