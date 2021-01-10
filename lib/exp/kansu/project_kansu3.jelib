@@ -399,6 +399,11 @@ EB||D5G2;|conn@8|a|I
 EY||D5G2;|conn@9|a|O
 X
 
+# Cell carry_skip_adder_8_4;1{sch}
+Ccarry_skip_adder_8_4;1{sch}||schematic|1610280676557|1610280676559|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+X
+
 # Cell csm_non_pipelined;1{ic}
 Ccsm_non_pipelined;1{ic}||artwork|1608815243869|1609940909332|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
@@ -4458,4 +4463,17 @@ Awire|Ci_in|D5G1;X-2;Y0.5;||2700|dut|Ci|-1.5|11|pin@2||-1.5|14
 Awire|Co_bar_out|D5G1;||900|pin@0||-13|6|Co_bar_load|A|-13|-7.5
 Awire|S_bar_out|D5G1;||900|dut|S_bar|-0.5|0.5|S_bar_load|Ci|-0.5|-7.5
 Awire|net@1|||0|dut|Co_bar|-5.5|6|pin@0||-13|6
+X
+
+# Cell xor;1{ic}
+Cxor;1{ic}||artwork|1610280706459|1610280706472|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@1||0|0|6|10|||SCHEM_function(D5G2;)Sxor|trace()V[-3/-5,-3/5,3/5,3/-5,-3/-5]
+X
+
+# Cell xor;1{sch}
+Cxor;1{sch}||schematic|1610280691407|1610280872657|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||-6.5|38.5||||
+NPower|pwr@0||-14.5|38.5||||
 X
