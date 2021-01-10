@@ -1,5 +1,5 @@
 # header information:
-HFFs|9.07
+HFFs2|9.07
 
 # Views:
 Vicon|ic
@@ -51,7 +51,7 @@ NOff-Page|conn@0||-34.5|2||||
 NOff-Page|conn@1||-51|15.5||||
 NOff-Page|conn@2||7.5|2||||
 NGround|gnd@2||-12.5|-16||||
-Iinv;1{ic}|inv@0||-38.5|15.5|||D5G4;
+Iinv1x;1{ic}|inv@0||-38.5|15.5|||D5G4;
 NTransistor|nmos@2||-14.5|-9|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S8|SIM_spice_model(D5G1;)Snmos
 NTransistor|nmos@3||-14.5|-3.5|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S8|SIM_spice_model(D5G1;)Snmos
 NWire_Pin|pin@9||-23.5|14.5||||
@@ -105,9 +105,9 @@ Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@1||-30|-16.5||||
 NOff-Page|conn@2||-23.5|1||||
 NOff-Page|conn@3||41.5|1||||
-Iinv;1{ic}|inv@1||-14|-16.5|||D5G4;
-Iinv;1{ic}|inv@2||5.5|1|||D5G4;
-Iinv;1{ic}|inv@3||31|1|||D5G4;
+Iinv1x;1{ic}|inv@1||-14|-16.5|||D5G4;
+Iinv1x;1{ic}|inv@2||5.5|1|||D5G4;
+Iinv1x;1{ic}|inv@3||31|1|||D5G4;
 NWire_Pin|pin@15||-2|1||||
 NWire_Pin|pin@16||-23|-16.5||||
 NWire_Pin|pin@17||-23|-19.5||||
@@ -142,8 +142,8 @@ EY||D5G2;|conn@3|y|O
 Eclk1||D5G2;|conn@1|a|I
 X
 
-# Cell inv;1{ic}
-Cinv;1{ic}||artwork|1608717402511|1610274540415|E
+# Cell inv1x;1{ic}
+Cinv1x;1{ic}||artwork|1608717402511|1610274540415|E
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NTriangle|art@2||0|0|6|6|RRR|
 NCircle|art@3||3.5|0|1|1||
@@ -157,13 +157,13 @@ EA||D5G2;|pin@0||I
 EY||D5G2;|pin@2||O
 X
 
-# Cell inv;1{sch}
-Cinv;1{sch}||schematic|1604231497891|1609770680698|
+# Cell inv1x;1{sch}
+Cinv1x;1{sch}||schematic|1604231497891|1609770680698|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||-19|12||||
 NOff-Page|conn@1||12|12||||
 NGround|gnd@0||-2|-6||||
-Iinv;1{ic}|inv@4||20|33.5|||D5G4;
+Iinv1x;1{ic}|inv@4||20|33.5|||D5G4;
 NTransistor|nmos@0||-4|6|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)D2.0|ATTR_width(D5G1;X0.5;Y-1;)S4|SIM_spice_model(D5G1;Y-6;)Snmos
 NWire_Pin|pin@0||-2|-4||||
 NWire_Pin|pin@1||-2|20||||
@@ -204,7 +204,7 @@ Eclk|clk1|D5G2;|pin@4||I
 X
 
 # Cell staticFF;1{sch}
-CstaticFF;1{sch}||schematic|1610274121030|1610281516862|
+CstaticFF;1{sch}||schematic|1610274121030|1610283330625|
 NWire_Pin|Qm|D5G1;|5|16.5||||
 ITristate;1{ic}|Tristate@2||-25.5|16.5|||D5G4;
 ITristate;1{ic}|Tristate@3||-4|5|YRR||D5G4;
@@ -214,11 +214,11 @@ Ngeneric:Facet-Center|art@0||0|0||||AV
 NOff-Page|conn@0||-38|16.5||||
 NOff-Page|conn@1||-40.5|26||||
 NOff-Page|conn@2||67.5|25.5||||
-Iinv;1{ic}|inv@1||-5|16.5|||D5G4;
-Iinv;1{ic}|inv@2||53|25.5|||D5G4;
-Iinv;1{ic}|inv@3||-24.5|26|||D5G4;
-Iinv;1{ic}|inv@4||53|16.5|||D5G4;
-Iinv;1{ic}|inv@5||10.5|51|||D5G4;
+Iinv1x;1{ic}|inv@1||-5|16.5|||D5G4;
+Iinv1x;1{ic}|inv@2||53|25.5|||D5G4;
+Iinv1x;1{ic}|inv@3||-24.5|26|||D5G4;
+Iinv1x;1{ic}|inv@4||53|16.5|||D5G4;
+Iinv1x;1{ic}|inv@5||10.5|51|||D5G4;
 NWire_Pin|pin@0||-10|16.5||||
 NWire_Pin|pin@1||-12.5|16.5||||
 NWire_Pin|pin@2||45.5|25.5||||
@@ -252,7 +252,7 @@ NWire_Pin|pin@36||27|16.5||||
 NWire_Pin|pin@37||38|16.5||||
 NWire_Pin|pin@38||32.5|10.5||||
 NWire_Pin|pin@39||54|0||||
-Ngeneric:Invisible-Pin|pin@40||-26|31.5|||||SIM_spice_card(D5G1;)S".include \"S:/DIC_sims/FF/script.txt\""
+Ngeneric:Invisible-Pin|pin@40||-18.5|39|||||SIM_spice_card(D5G1;)S".include \"/home/vasid/.git/courses/dic_proj/spice_scripts/FF/script1.txt\""
 NWire_Pin|pin@42||5.5|51||||
 NWire_Pin|pin@45||-12.5|24.5||||
 NWire_Pin|pin@46||-12.5|25||||

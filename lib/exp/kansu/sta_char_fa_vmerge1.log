@@ -1,0 +1,137 @@
+Circuit: *** SPICE deck for cell sta_char_fa_vmerge1{sch} from library project_kansu3
+
+Vin2: Removing PWL point (1.2e-009,0)
+Vin2: Removing PWL point (6.1e-008,1)
+Vin2: Removing PWL point (1.21e-007,1)
+Vin2: Removing PWL point (1.36e-007,0)
+Vin2: Removing PWL point (2.36e-007,0)
+Vin2: Removing PWL point (2.51e-007,0)
+Vin2: Removing PWL point (2.86e-007,0)
+Vin2: Removing PWL point (3.06e-007,1)
+Vin2: Removing PWL point (3.26e-007,0)
+Vin1: Removing PWL point (1.2e-009,0)
+Vin1: Removing PWL point (2.1e-008,1)
+Vin1: Removing PWL point (5.6e-008,0)
+Vin1: Removing PWL point (7.6e-008,1)
+Vin1: Removing PWL point (1.11e-007,0)
+Vin1: Removing PWL point (1.31e-007,0)
+Vin1: Removing PWL point (1.46e-007,0)
+Vin1: Removing PWL point (1.61e-007,1)
+Vin1: Removing PWL point (2.01e-007,1)
+Vin1: Removing PWL point (2.16e-007,0)
+Vin1: Removing PWL point (2.36e-007,0)
+Vin1: Removing PWL point (2.86e-007,1)
+Vin1: Removing PWL point (3.06e-007,0)
+Vin1: Removing PWL point (3.16e-007,1)
+Vin1: Removing PWL point (3.26e-007,0)
+Vin1: Removing PWL point (3.36e-007,1)
+Vin0: Removing PWL point (1.2e-009,0)
+Vin0: Removing PWL point (1.6e-008,0)
+Vin0: Removing PWL point (3.1e-008,0)
+Vin0: Removing PWL point (4.1e-008,1)
+Vin0: Removing PWL point (5.6e-008,0)
+Vin0: Removing PWL point (7.1e-008,0)
+Vin0: Removing PWL point (8.6e-008,0)
+Vin0: Removing PWL point (9.6e-008,1)
+Vin0: Removing PWL point (1.11e-007,0)
+Vin0: Removing PWL point (1.31e-007,1)
+Vin0: Removing PWL point (1.46e-007,1)
+Vin0: Removing PWL point (1.56e-007,0)
+Vin0: Removing PWL point (1.76e-007,1)
+Vin0: Removing PWL point (1.91e-007,0)
+Vin0: Removing PWL point (2.11e-007,1)
+Vin0: Removing PWL point (2.26e-007,1)
+Vin0: Removing PWL point (2.56e-007,0)
+Vin0: Removing PWL point (2.71e-007,1)
+WARNING: Node DUT_1_CI is floating.
+WARNING: Node DUT_1_A is floating.
+
+Per .tran options, skipping operating point for transient analysis.
+
+delay_1=4.17162e-011 FROM 6.1e-009 TO 6.14172e-009
+delay_2=1.50924e-008 FROM 1.11e-008 TO 2.61924e-008
+delay_3=1.00924e-008 FROM 1.61e-008 TO 2.61924e-008
+delay_4=1.78561e-011 FROM 2.11e-008 TO 2.11179e-008
+delay_5=1.30537e-011 FROM 2.61e-008 TO 2.61131e-008
+delay_6=1.01322e-008 FROM 3.11e-008 TO 4.12322e-008
+delay_7=1.93992e-011 FROM 3.61e-008 TO 3.61194e-008
+delay_8=3.84809e-011 FROM 4.11e-008 TO 4.11385e-008
+delay_9=1.53785e-011 FROM 4.61e-008 TO 4.61154e-008
+delay_10=3.32727e-012 FROM 5.11e-008 TO 5.11033e-008
+delay_11=1.00891e-008 FROM 5.61e-008 TO 6.61891e-008
+delay_12=1.22986e-011 FROM 6.11e-008 TO 6.11123e-008
+delay_13=1.40342e-011 FROM 6.61e-008 TO 6.6114e-008
+delay_14=5.00158e-011 FROM 7.11e-008 TO 7.115e-008
+delay_15=1.49212e-008 FROM 7.61e-008 TO 9.10212e-008
+delay_16=9.92119e-009 FROM 8.11e-008 TO 9.10212e-008
+delay_17=1.17074e-011 FROM 8.61e-008 TO 8.61117e-008
+delay_18=1.02409e-012 FROM 9.11e-008 TO 9.1101e-008
+delay_19=1.99242e-008 FROM 9.61e-008 TO 1.16024e-007
+delay_20=1.49242e-008 FROM 1.011e-007 TO 1.16024e-007
+delay_21=1.9613e-011 FROM 1.061e-007 TO 1.0612e-007
+delay_22=2.01408e-008 FROM 1.111e-007 TO 1.31241e-007
+delay_23=1.92866e-011 FROM 1.161e-007 TO 1.16119e-007
+delay_24=1.49474e-008 FROM 1.211e-007 TO 1.36047e-007
+delay_25=9.94739e-009 FROM 1.261e-007 TO 1.36047e-007
+delay_26=4.42469e-011 FROM 1.311e-007 TO 1.31144e-007
+delay_27=1.12215e-010 FROM 1.361e-007 TO 1.36212e-007
+delay_28=9.52584e-011 FROM 1.411e-007 TO 1.41195e-007
+delay_29=1.29149e-011 FROM 1.461e-007 TO 1.46113e-007
+delay_30=3.88406e-012 FROM 1.511e-007 TO 1.51104e-007
+delay_31=7.4483e-011 FROM 1.561e-007 TO 1.56174e-007
+delay_32=1.06821e-011 FROM 1.611e-007 TO 1.61111e-007
+delay_33=5.86566e-011 FROM 1.661e-007 TO 1.66159e-007
+delay_34=2.00916e-008 FROM 1.711e-007 TO 1.91192e-007
+delay_35=1.50916e-008 FROM 1.761e-007 TO 1.91192e-007
+delay_36=1.00916e-008 FROM 1.811e-007 TO 1.91192e-007
+delay_37=5.09156e-009 FROM 1.861e-007 TO 1.91192e-007
+delay_38=3.16732e-013 FROM 1.911e-007 TO 1.911e-007
+delay_39=1.95452e-011 FROM 1.961e-007 TO 1.9612e-007
+delay_40=1.88638e-011 FROM 2.011e-007 TO 2.01119e-007
+delay_41=4.43457e-012 FROM 2.061e-007 TO 2.06104e-007
+delay_42=6.43316e-011 FROM 2.111e-007 TO 2.11164e-007
+delay_43=1.05735e-010 FROM 2.161e-007 TO 2.16206e-007
+delay_44=1.52361e-010 FROM 2.211e-007 TO 2.21252e-007
+delay_45=-7.4189e-013 FROM 2.261e-007 TO 2.26099e-007
+delay_46=1.98765e-011 FROM 2.311e-007 TO 2.3112e-007
+delay_47=4.17194e-011 FROM 2.361e-007 TO 2.36142e-007
+delay_48=4.19256e-011 FROM 2.411e-007 TO 2.41142e-007
+delay_49=4.8947e-011 FROM 2.461e-007 TO 2.46149e-007
+delay_50=1.06478e-010 FROM 2.511e-007 TO 2.51206e-007
+delay_51=2.89101e-011 FROM 2.561e-007 TO 2.56129e-007
+delay_52=2.00984e-008 FROM 2.611e-007 TO 2.81198e-007
+delay_53=1.99987e-011 FROM 2.661e-007 TO 2.6612e-007
+delay_54=1.49262e-008 FROM 2.711e-007 TO 2.86026e-007
+delay_55=9.92619e-009 FROM 2.761e-007 TO 2.86026e-007
+delay_56=2.05166e-011 FROM 2.811e-007 TO 2.81121e-007
+delay_57=2.21251e-011 FROM 2.861e-007 TO 2.86122e-007
+delay_58=2.27714e-011 FROM 2.911e-007 TO 2.91123e-007
+delay_59=2.14426e-011 FROM 2.961e-007 TO 2.96121e-007
+delay_60=2.25995e-011 FROM 3.011e-007 TO 3.01123e-007
+delay_61=2.1259e-011 FROM 3.061e-007 TO 3.06121e-007
+delay_62=1.50123e-008 FROM 3.111e-007 TO 3.26112e-007
+delay_63=1.00123e-008 FROM 3.161e-007 TO 3.26112e-007
+delay_64=2.03554e-011 FROM 3.211e-007 TO 3.2112e-007
+delay_65=4.12941e-011 FROM 3.261e-007 TO 3.26141e-007
+delay_66=1.0648e-010 FROM 3.311e-007 TO 3.31206e-007
+delay_67=1.90713e-011 FROM 3.361e-007 TO 3.36119e-007
+
+
+Date: Sun Jan 10 19:54:41 2021
+Total elapsed time: 13.623 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7577
+traniter = 7577
+tranpoints = 1978
+accept = 1870
+rejected = 108
+matrix size = 372
+fillins = 30
+solver = Normal
+Thread vector: 1912.0/936.5[4] 105.1/593.8[1] 27.5/129.5[1] 18.1/947.2[1]  2592/500
+Matrix Compiler1:    3270 opcodes  82.2/[42.4]/84.8
+Matrix Compiler2:    3538 opcodes  33.8/[34.5]/41.0
+
