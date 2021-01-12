@@ -1,8 +1,8 @@
 from numpy import binary_repr
 
 input_width = 8
-inputs_x = [1,2,-1]
-inputs_y = [1,4,-1]
+inputs_x = [1,-1]
+inputs_y = [-1,-1]
 
 n = len(inputs_x)
 if n!=len(inputs_y):
@@ -27,7 +27,7 @@ dt = 200  # rise & fall time
 Tsim = 2*T0 + n*T
 
 incpath = "/home/vasid/.git/courses/dic_proj/22nm_HP.pm"
-header=".include \"%s\"\n.params Vdd=1\nvdd vdd gnd dc {Vdd}\n\n"%(incpath)
+header=".include \"%s\"\n.params Vdd=1\nvdd vdd gnd dc {Vdd}\nvclk clk gnd PULSE(0 {Vdd} %dp %dp %dp %dp %dp)\n\n"%(incpath,2000,100,100,T//2,T)
 pwlcode = ""
 footer="\n.tran 0 %dp UIC\n"%(Tsim)
 

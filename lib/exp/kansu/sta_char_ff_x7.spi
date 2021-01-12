@@ -1,7 +1,7 @@
 *** SPICE deck for cell sta_char_ff_x7{sch} from library project_kansu3
 *** Created on Sun Jan 10, 2021 23:17:46
-*** Last revised on Sun Jan 10, 2021 23:24:41
-*** Written on Sun Jan 10, 2021 23:26:25 by Electric VLSI Design System, version 9.07
+*** Last revised on Mon Jan 11, 2021 00:29:45
+*** Written on Mon Jan 11, 2021 00:29:51 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
 
@@ -63,15 +63,15 @@ Xinv@4 net@5 net@49 project_kansu3__inv1x
 .global gnd vdd
 
 *** TOP LEVEL CELL: sta_char_ff_x7{sch}
-Xand1x@0 net@11 vdd x7y0 project_kansu3__and1x
-Xand1x@1 net@11 vdd x7y1 project_kansu3__and1x
-Xand1x@2 net@11 vdd x7y3 project_kansu3__and1x
-Xand1x@3 net@11 vdd x7y5 project_kansu3__and1x
-Xnand1x@0 net@11 vdd INVx7y2 project_kansu3__nand1x
-Xnand1x@1 net@11 vdd INVx7y4 project_kansu3__nand1x
-Xnand1x@2 net@11 vdd INVx7y6 project_kansu3__nand1x
-Xnand1x@3 net@11 vdd INVx7y7 project_kansu3__nand1x
-XstaticFF@0 clk1 D net@11 project_kansu3__staticFF
+Xand1x@0 Y_out vdd x7y0 project_kansu3__and1x
+Xand1x@1 Y_out vdd x7y1 project_kansu3__and1x
+Xand1x@2 Y_out vdd x7y3 project_kansu3__and1x
+Xand1x@3 Y_out vdd x7y5 project_kansu3__and1x
+Xnand1x@0 Y_out vdd INVx7y2 project_kansu3__nand1x
+Xnand1x@1 Y_out vdd INVx7y4 project_kansu3__nand1x
+Xnand1x@2 Y_out vdd INVx7y6 project_kansu3__nand1x
+Xnand1x@3 Y_out vdd INVx7y7 project_kansu3__nand1x
+XstaticFF@0 clk1 D Y_out project_kansu3__staticFF
 
 * Spice Code nodes in cell cell 'sta_char_ff_x7{sch}'
 .include "/home/vasid/.git/courses/dic_proj/spice_scripts/ff_x7_characterize/script1.txt"

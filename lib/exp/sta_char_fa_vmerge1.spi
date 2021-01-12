@@ -1,0 +1,42 @@
+*** SPICE deck for cell sta_char_fa_vmerge1{sch} from library project_kansu3
+*** Created on Sat Jan 09, 2021 18:52:17
+*** Last revised on Sun Jan 10, 2021 21:47:34
+*** Written on Mon Jan 11, 2021 02:50:01 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
+
+* cell 'fa_c3x_s2x{sch}' is described in this file:
+.include /home/vasid/.git/courses/dic_proj/SPI_files/fa_c3x_s2x.spi
+
+* cell 'inv1x{sch}' is described in this file:
+.include /home/vasid/.git/courses/dic_proj/SPI_files/inv1x.spi
+
+*** SUBCIRCUIT project_kansu3__Tristate FROM CELL Tristate{sch}
+.SUBCKT project_kansu3__Tristate clk1 D gnd Q vdd
+Mnmos@2 net@9 D gnd gnd nmos_HP L=0.022U W=0.088U
+Mnmos@3 Q clk1 net@9 gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 vdd D net@8 vdd pmos_HP L=0.022U W=0.176U
+Mpmos@1 net@8 clk_bar Q vdd pmos_HP L=0.022U W=0.176U
+Xinv@0 clk1 gnd vdd clk_bar inv1x
+.ENDS project_kansu3__Tristate
+
+*** SUBCIRCUIT project_kansu3__staticFF FROM CELL staticFF{sch}
+.SUBCKT project_kansu3__staticFF clk1 D gnd vdd Y
+XTristate@2 clk1 D gnd net@1 vdd project_kansu3__Tristate
+XTristate@3 clk_bar net@6 gnd net@1 vdd project_kansu3__Tristate
+XTristate@4 clk_bar net@6 gnd net@5 vdd project_kansu3__Tristate
+XTristate@5 clk1 net@49 gnd net@5 vdd project_kansu3__Tristate
+Xinv@1 net@1 gnd vdd net@6 inv1x
+Xinv@2 net@5 gnd vdd Y inv1x
+Xinv@3 clk1 gnd vdd clk_bar inv1x
+Xinv@4 net@5 gnd vdd net@49 inv1x
+.ENDS project_kansu3__staticFF
+
+*** TOP LEVEL CELL: sta_char_fa_vmerge1{sch}
+Xdut A_in B_in Ci_in Co_bar_out gnd S_bar_out vdd fa_c3x_s2x
+Xdut_1 dut_1_A Co_bar_out dut_1_Ci dut_1_Co_bar gnd dut_1_S_bar vdd fa_c3x_s2x
+XstaticFF@0 vdd S_bar_out gnd vdd staticFF@0_Y project_kansu3__staticFF
+
+* Spice Code nodes in cell cell 'sta_char_fa_vmerge1{sch}'
+.include "/home/vasid/.git/courses/dic_proj/spice_scripts/vmerge_characterize/script1.txt"
+.END

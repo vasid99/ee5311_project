@@ -1,0 +1,143 @@
+Circuit: *** SPICE deck for cell sta_char_fa_critpath{sch} from library project_kansu3
+
+Vin2: Removing PWL point (1.2e-009,0)
+Vin2: Removing PWL point (6.1e-008,1)
+Vin2: Removing PWL point (1.21e-007,1)
+Vin2: Removing PWL point (1.36e-007,0)
+Vin2: Removing PWL point (2.36e-007,0)
+Vin2: Removing PWL point (2.51e-007,0)
+Vin2: Removing PWL point (2.86e-007,0)
+Vin2: Removing PWL point (3.06e-007,1)
+Vin2: Removing PWL point (3.26e-007,0)
+Vin1: Removing PWL point (1.2e-009,0)
+Vin1: Removing PWL point (2.1e-008,1)
+Vin1: Removing PWL point (5.6e-008,0)
+Vin1: Removing PWL point (7.6e-008,1)
+Vin1: Removing PWL point (1.11e-007,0)
+Vin1: Removing PWL point (1.31e-007,0)
+Vin1: Removing PWL point (1.46e-007,0)
+Vin1: Removing PWL point (1.61e-007,1)
+Vin1: Removing PWL point (2.01e-007,1)
+Vin1: Removing PWL point (2.16e-007,0)
+Vin1: Removing PWL point (2.36e-007,0)
+Vin1: Removing PWL point (2.86e-007,1)
+Vin1: Removing PWL point (3.06e-007,0)
+Vin1: Removing PWL point (3.16e-007,1)
+Vin1: Removing PWL point (3.26e-007,0)
+Vin1: Removing PWL point (3.36e-007,1)
+Vin0: Removing PWL point (1.2e-009,0)
+Vin0: Removing PWL point (1.6e-008,0)
+Vin0: Removing PWL point (3.1e-008,0)
+Vin0: Removing PWL point (4.1e-008,1)
+Vin0: Removing PWL point (5.6e-008,0)
+Vin0: Removing PWL point (7.1e-008,0)
+Vin0: Removing PWL point (8.6e-008,0)
+Vin0: Removing PWL point (9.6e-008,1)
+Vin0: Removing PWL point (1.11e-007,0)
+Vin0: Removing PWL point (1.31e-007,1)
+Vin0: Removing PWL point (1.46e-007,1)
+Vin0: Removing PWL point (1.56e-007,0)
+Vin0: Removing PWL point (1.76e-007,1)
+Vin0: Removing PWL point (1.91e-007,0)
+Vin0: Removing PWL point (2.11e-007,1)
+Vin0: Removing PWL point (2.26e-007,1)
+Vin0: Removing PWL point (2.56e-007,0)
+Vin0: Removing PWL point (2.71e-007,1)
+WARNING: Node FA_C3X_S2X:B#0NMOS@3_POLY-LEFT##1 is floating.
+WARNING: Node FA_C3X_S2X:CI#0NMOS@5_POLY-LEFT##1 is floating.
+WARNING: Node FA_C3X_S2X:A#0CONTACT@34_METAL-1-POLYSILICON-1##2 is floating.
+WARNING: Node CO_BAR_LOAD:B#0NMOS@3_POLY-LEFT##1 is floating.
+WARNING: Node CO_BAR_LOAD:CI#0NMOS@5_POLY-LEFT##1 is floating.
+WARNING: Node S_BAR_LOAD:B#0NMOS@3_POLY-LEFT##1 is floating.
+WARNING: Node S_BAR_LOAD:A#0CONTACT@34_METAL-1-POLYSILICON-1##2 is floating.
+
+Per .tran options, skipping operating point for transient analysis.
+
+delay_1=1.55857e-011 FROM 6.1e-009 TO 6.11559e-009
+delay_2=4.10238e-011 FROM 1.11e-008 TO 1.1141e-008
+delay_3=1.58731e-011 FROM 1.61e-008 TO 1.61159e-008
+delay_4=1.823e-011 FROM 2.11e-008 TO 2.11182e-008
+delay_5=1.52179e-011 FROM 2.61e-008 TO 2.61152e-008
+delay_6=4.18594e-011 FROM 3.11e-008 TO 3.11419e-008
+delay_7=1.00417e-008 FROM 3.61e-008 TO 4.61417e-008
+delay_8=7.11321e-011 FROM 4.11e-008 TO 4.11711e-008
+delay_9=4.16547e-011 FROM 4.61e-008 TO 4.61417e-008
+delay_10=1.00458e-008 FROM 5.11e-008 TO 6.11458e-008
+delay_11=1.76066e-011 FROM 5.61e-008 TO 5.61176e-008
+delay_12=4.57982e-011 FROM 6.11e-008 TO 6.11458e-008
+delay_13=1.53185e-011 FROM 6.61e-008 TO 6.61153e-008
+delay_14=7.86765e-011 FROM 7.11e-008 TO 7.11787e-008
+delay_15=5.00391e-011 FROM 7.61e-008 TO 7.615e-008
+delay_16=1.59432e-011 FROM 8.11e-008 TO 8.11159e-008
+delay_17=1.75379e-011 FROM 8.61e-008 TO 8.61175e-008
+delay_18=1.00493e-008 FROM 9.11e-008 TO 1.01149e-007
+delay_19=1.61544e-011 FROM 9.61e-008 TO 9.61162e-008
+delay_20=4.93177e-011 FROM 1.011e-007 TO 1.01149e-007
+delay_21=2.5069e-008 FROM 1.061e-007 TO 1.31169e-007
+delay_22=3.86351e-011 FROM 1.111e-007 TO 1.11139e-007
+delay_23=3.00149e-008 FROM 1.161e-007 TO 1.46115e-007
+delay_24=2.50149e-008 FROM 1.211e-007 TO 1.46115e-007
+delay_25=2.00149e-008 FROM 1.261e-007 TO 1.46115e-007
+delay_26=6.89757e-011 FROM 1.311e-007 TO 1.31169e-007
+delay_27=2.00295e-008 FROM 1.361e-007 TO 1.56129e-007
+delay_28=1.50295e-008 FROM 1.411e-007 TO 1.56129e-007
+delay_29=1.48718e-011 FROM 1.461e-007 TO 1.46115e-007
+delay_30=5.10596e-009 FROM 1.511e-007 TO 1.56206e-007
+delay_31=1.05955e-010 FROM 1.561e-007 TO 1.56206e-007
+delay_32=2.03222e-011 FROM 1.611e-007 TO 1.6112e-007
+delay_33=7.33714e-011 FROM 1.661e-007 TO 1.66173e-007
+delay_34=1.00167e-008 FROM 1.711e-007 TO 1.81117e-007
+delay_35=4.13831e-011 FROM 1.761e-007 TO 1.76141e-007
+delay_36=1.67263e-011 FROM 1.811e-007 TO 1.81117e-007
+delay_37=2.50182e-008 FROM 1.861e-007 TO 2.11118e-007
+delay_38=2.00182e-008 FROM 1.911e-007 TO 2.11118e-007
+delay_39=5.98004e-011 FROM 1.961e-007 TO 1.9616e-007
+delay_40=1.01006e-008 FROM 2.011e-007 TO 2.11201e-007
+delay_41=5.10059e-009 FROM 2.061e-007 TO 2.11201e-007
+delay_42=1.00586e-010 FROM 2.111e-007 TO 2.11201e-007
+delay_43=2.0032e-008 FROM 2.161e-007 TO 2.36132e-007
+delay_44=1.5032e-008 FROM 2.211e-007 TO 2.36132e-007
+delay_45=1.0032e-008 FROM 2.261e-007 TO 2.36132e-007
+delay_46=5.61189e-011 FROM 2.311e-007 TO 2.31156e-007
+delay_47=3.1958e-011 FROM 2.361e-007 TO 2.36132e-007
+delay_48=7.71851e-011 FROM 2.411e-007 TO 2.41177e-007
+delay_49=7.28098e-011 FROM 2.461e-007 TO 2.46173e-007
+delay_50=3.00301e-008 FROM 2.511e-007 TO 2.8113e-007
+delay_51=2.50301e-008 FROM 2.561e-007 TO 2.8113e-007
+delay_52=2.00301e-008 FROM 2.611e-007 TO 2.8113e-007
+delay_53=3.10727e-011 FROM 2.661e-007 TO 2.66131e-007
+delay_54=1.50181e-008 FROM 2.711e-007 TO 2.86118e-007
+delay_55=1.00181e-008 FROM 2.761e-007 TO 2.86118e-007
+delay_56=3.01276e-011 FROM 2.811e-007 TO 2.8113e-007
+delay_57=1.81353e-011 FROM 2.861e-007 TO 2.86118e-007
+delay_58=2.7635e-011 FROM 2.911e-007 TO 2.91128e-007
+delay_59=2.87258e-011 FROM 2.961e-007 TO 2.96129e-007
+delay_60=2.79524e-011 FROM 3.011e-007 TO 3.01128e-007
+delay_61=4.66785e-011 FROM 3.061e-007 TO 3.06147e-007
+delay_62=1.00577e-008 FROM 3.111e-007 TO 3.21158e-007
+delay_63=5.00287e-011 FROM 3.161e-007 TO 3.1615e-007
+delay_64=5.76786e-011 FROM 3.211e-007 TO 3.21158e-007
+delay_65=1.55703e-011 FROM 3.261e-007 TO 3.26116e-007
+
+Measurement "delay_66" FAIL'ed
+delay_67=4.91892e-011 FROM 3.361e-007 TO 3.36149e-007
+
+
+Date: Mon Jan 11 02:42:23 2021
+Total elapsed time: 15.849 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 5912
+traniter = 5912
+tranpoints = 1613
+accept = 1606
+rejected = 7
+matrix size = 1559
+fillins = 2298
+solver = Normal
+Thread vector: 1744.0/1383.6[4] 417.7/160.1[4] 78.2/75.5[1] 51.4/171.3[1]  2592/500
+Matrix Compiler1: 322.09 KB object code size  490.9/265.4/[140.7]
+Matrix Compiler2: 203.50 KB object code size  184.6/163.6/[81.9]
+

@@ -52,7 +52,8 @@ R14 Y#2pin@54_metal-1 Y#3pin@58_metal-1 0.117
 R15 Y#4contact@41_metal-1-n-act Y#3pin@58_metal-1 0.254
 
 * Spice Code nodes in cell cell 'inv1x{lay}'
-.include "S:/DIC_sims/22nm_HP_HP.pm"
+*.include "S:/DIC_sims/22nm_HP_HP.pm"
+.include "/home/vasid/.git/courses/dic_proj/22nm_HP.pm"
 .ENDS inv1x
 
 

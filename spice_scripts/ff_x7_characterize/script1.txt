@@ -4,7 +4,9 @@ vdd vdd gnd dc {Vdd}
 va clk1 gnd PULSE(0 {Vdd} 1n 100p 100p 2n 4n)
 vb D gnd PULSE(0 {Vdd} 0n 100p 100p {t_d} {2*t_d})
 
-.meas tran holdtime trig V(D)={0.5*Vdd} td={1.854u} cross=1 targ V(clk1)={0.5*Vdd} td={1.854u} cross=1
+.meas tran holdtime trig V(clk1)={0.5*Vdd} td={1.846u} cross=1 targ V(D)={0.5*Vdd} td={1.846u} cross=1
 .meas tran setuptime trig V(D)={0.5*Vdd} td={2.0427u} cross=1 targ V(clk1)={0.5*Vdd} td={2.0427u} cross=1
+.meas tran cqdelay_rise trig V(clk1)={0.5*Vdd} td={10n} cross=1 targ V(Y_out)={0.5*Vdd} td={10n} cross=1
+.meas tran cqdelay_fall trig V(clk1)={0.5*Vdd} td={14n} cross=1 targ V(Y_out)={0.5*Vdd} td={14n} cross=1
 
-.tran 0 8000n UIC
+.tran 0 2100n UIC

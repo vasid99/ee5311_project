@@ -67,7 +67,8 @@ R21 Y#6pin@53_metal-2 Y 0.205
 R22 Y Y#0contact@13_metal-1-n-act 0.302
 
 * Spice Code nodes in cell cell 'nand1x{lay}'
-.include "S:/DIC_sims/22nm_HP_HP.pm"
+*.include "S:/DIC_sims/22nm_HP_HP.pm"
+.include "/home/vasid/.git/courses/dic_proj/22nm_HP.pm"
 .ENDS nand1x
 
 

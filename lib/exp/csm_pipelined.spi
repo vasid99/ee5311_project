@@ -1,0 +1,274 @@
+*** SPICE deck for cell csm_pipelined{sch} from library project_kansu3
+*** Created on Tue Dec 22, 2020 17:35:14
+*** Last revised on Mon Jan 11, 2021 03:46:14
+*** Written on Mon Jan 11, 2021 03:46:16 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
+
+*** SUBCIRCUIT project_kansu3__and1x FROM CELL and1x{sch}
+.SUBCKT project_kansu3__and1x A B gnd vdd Y
+Mnmos@1 net@13 A net@50 gnd nmos_HP L=0.022U W=0.088U
+Mnmos@2 Y net@13 gnd gnd nmos_HP L=0.022U W=0.044U
+Mnmos@3 net@50 B gnd gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 vdd A net@13 vdd pmos_HP L=0.022U W=0.088U
+Mpmos@1 vdd B net@13 vdd pmos_HP L=0.022U W=0.088U
+Mpmos@3 vdd net@13 Y vdd pmos_HP L=0.022U W=0.088U
+.ENDS project_kansu3__and1x
+
+*** SUBCIRCUIT project_kansu3__fa_c3x_s2x FROM CELL fa_c3x_s2x{sch}
+.SUBCKT project_kansu3__fa_c3x_s2x A B Ci Co_bar gnd S_bar vdd
+Mnmos@0 net@33 B net@40 gnd nmos_HP L=0.022U W=0.132U
+Mnmos@1 S_bar Ci net@33 gnd nmos_HP L=0.022U W=0.132U
+Mnmos@2 net@40 A gnd gnd nmos_HP L=0.022U W=0.132U
+Mnmos@3 net@21 A gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@4 net@21 B gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@5 S_bar Co_bar net@21 gnd nmos_HP L=0.022U W=0.176U
+Mnmos@6 net@21 Ci gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@7 Co_bar Ci net@73 gnd nmos_HP L=0.022U W=0.264U
+Mnmos@8 net@73 A gnd gnd nmos_HP L=0.022U W=0.264U
+Mnmos@9 net@73 B gnd gnd nmos_HP L=0.022U W=0.264U
+Mnmos@10 net@67 A gnd gnd nmos_HP L=0.022U W=0.088U
+Mnmos@11 Co_bar B net@67 gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 net@20 Ci S_bar vdd pmos_HP L=0.022U W=0.264U
+Mpmos@1 net@1 B net@20 vdd pmos_HP L=0.022U W=0.264U
+Mpmos@2 vdd A net@1 vdd pmos_HP L=0.022U W=0.264U
+Mpmos@3 net@25 Co_bar S_bar vdd pmos_HP L=0.022U W=0.352U
+Mpmos@4 vdd A net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@5 vdd B net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@6 vdd Ci net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@7 net@49 Ci Co_bar vdd pmos_HP L=0.022U W=0.528U
+Mpmos@8 vdd A net@49 vdd pmos_HP L=0.022U W=0.528U
+Mpmos@9 vdd B net@49 vdd pmos_HP L=0.022U W=0.528U
+Mpmos@10 vdd A net@62 vdd pmos_HP L=0.022U W=0.176U
+Mpmos@11 net@62 B Co_bar vdd pmos_HP L=0.022U W=0.176U
+.ENDS project_kansu3__fa_c3x_s2x
+
+*** SUBCIRCUIT project_kansu3__inv1x FROM CELL inv1x{sch}
+.SUBCKT project_kansu3__inv1x A gnd vdd Y
+Mnmos@0 Y A gnd gnd nmos_HP L=0.022U W=0.044U
+Mpmos@0 vdd A Y vdd pmos_HP L=0.022U W=0.088U
+.ENDS project_kansu3__inv1x
+
+*** SUBCIRCUIT project_kansu3__nand1x FROM CELL nand1x{sch}
+.SUBCKT project_kansu3__nand1x A B gnd vdd Y
+Mnmos@2 Y B net@3 gnd nmos_HP L=0.022U W=0.088U
+Mnmos@4 net@3 A gnd gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 vdd B Y vdd pmos_HP L=0.022U W=0.088U
+Mpmos@2 vdd A Y vdd pmos_HP L=0.022U W=0.088U
+.ENDS project_kansu3__nand1x
+
+*** SUBCIRCUIT project_kansu3__Tristate FROM CELL Tristate{sch}
+.SUBCKT project_kansu3__Tristate clk1 D gnd Q vdd
+Mnmos@2 net@9 D gnd gnd nmos_HP L=0.022U W=0.088U
+Mnmos@3 Q clk1 net@9 gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 vdd D net@8 vdd pmos_HP L=0.022U W=0.176U
+Mpmos@1 net@8 clk_bar Q vdd pmos_HP L=0.022U W=0.176U
+Xinv@0 clk1 gnd vdd clk_bar project_kansu3__inv1x
+.ENDS project_kansu3__Tristate
+
+*** SUBCIRCUIT project_kansu3__staticFF FROM CELL staticFF{sch}
+.SUBCKT project_kansu3__staticFF clk1 D gnd vdd Y
+XTristate@2 clk1 D gnd net@1 vdd project_kansu3__Tristate
+XTristate@3 clk_bar net@6 gnd net@1 vdd project_kansu3__Tristate
+XTristate@4 clk_bar net@6 gnd net@5 vdd project_kansu3__Tristate
+XTristate@5 clk1 net@49 gnd net@5 vdd project_kansu3__Tristate
+Xinv@1 net@1 gnd vdd net@6 project_kansu3__inv1x
+Xinv@2 net@5 gnd vdd Y project_kansu3__inv1x
+Xinv@3 clk1 gnd vdd clk_bar project_kansu3__inv1x
+Xinv@4 net@5 gnd vdd net@49 project_kansu3__inv1x
+.ENDS project_kansu3__staticFF
+
+*** TOP LEVEL CELL: csm_pipelined{sch}
+Xand1x@0 net@264 net@266 gnd vdd x0y0 project_kansu3__and1x
+Xand1x@7 x7_FF_out net@266 gnd vdd x7y0 project_kansu3__and1x
+Xand1x@15 x7_FF_out net@311 gnd vdd x7y1 project_kansu3__and1x
+Xand1x@16 net@264 net@391 gnd vdd x0y2 project_kansu3__and1x
+Xand1x@17 net@270 net@391 gnd vdd x1y2 project_kansu3__and1x
+Xand1x@18 net@279 net@391 gnd vdd x2y2 project_kansu3__and1x
+Xand1x@19 net@285 net@391 gnd vdd x3y2 project_kansu3__and1x
+Xand1x@20 net@291 net@391 gnd vdd x4y2 project_kansu3__and1x
+Xand1x@21 net@297 net@391 gnd vdd x5y2 project_kansu3__and1x
+Xand1x@22 net@303 net@391 gnd vdd x6y2 project_kansu3__and1x
+Xand1x@31 x7_FF_out net@431 gnd vdd x7y3 project_kansu3__and1x
+Xand1x@32 net@264 net@480 gnd vdd x0y4 project_kansu3__and1x
+Xand1x@33 net@270 net@480 gnd vdd x1y4 project_kansu3__and1x
+Xand1x@34 net@279 net@480 gnd vdd x2y4 project_kansu3__and1x
+Xand1x@35 net@285 net@480 gnd vdd x3y4 project_kansu3__and1x
+Xand1x@36 net@291 net@480 gnd vdd x4y4 project_kansu3__and1x
+Xand1x@37 net@297 net@480 gnd vdd x5y4 project_kansu3__and1x
+Xand1x@38 net@303 net@480 gnd vdd x6y4 project_kansu3__and1x
+Xand1x@47 x7_FF_out net@363 gnd vdd x7y5 project_kansu3__and1x
+Xand1x@48 net@264 net@366 gnd vdd x0y6 project_kansu3__and1x
+Xand1x@49 net@270 net@366 gnd vdd x1y6 project_kansu3__and1x
+Xand1x@50 net@279 net@366 gnd vdd x2y6 project_kansu3__and1x
+Xand1x@51 net@285 net@366 gnd vdd x3y6 project_kansu3__and1x
+Xand1x@52 net@291 net@366 gnd vdd x4y6 project_kansu3__and1x
+Xand1x@53 net@297 net@366 gnd vdd x5y6 project_kansu3__and1x
+Xand1x@54 net@303 net@366 gnd vdd x6y6 project_kansu3__and1x
+Xand1x@56 net@264 net@369 gnd vdd x0y7 project_kansu3__and1x
+Xand1x@57 net@270 net@369 gnd vdd x1y7 project_kansu3__and1x
+Xand1x@58 net@279 net@369 gnd vdd x2y7 project_kansu3__and1x
+Xand1x@59 net@285 net@369 gnd vdd x3y7 project_kansu3__and1x
+Xand1x@60 net@291 net@369 gnd vdd x4y7 project_kansu3__and1x
+Xand1x@61 net@297 net@369 gnd vdd x5y7 project_kansu3__and1x
+Xand1x@62 net@303 net@369 gnd vdd x6y7 project_kansu3__and1x
+Xfa_c3x_s2x@0 vdd INVx0y1 INVx1y0 FA_Co_bar_0_0 gnd FA_S_bar_0_0 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@1 vdd INVx1y1 INVx2y0 FA_Co_bar_0_1 gnd FA_S_bar_0_1 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@2 vdd INVx2y1 INVx3y0 FA_Co_bar_0_2 gnd FA_S_bar_0_2 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@3 vdd INVx3y1 INVx4y0 FA_Co_bar_0_3 gnd FA_S_bar_0_3 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@4 vdd INVx4y1 INVx5y0 FA_Co_bar_0_4 gnd FA_S_bar_0_4 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@5 vdd INVx5y1 INVx6y0 FA_Co_bar_0_5 gnd FA_S_bar_0_5 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@6 vdd INVx6y1 x7y0 FA_Co_bar_0_6 gnd FA_S_bar_0_6 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@7 vdd x7y1 gnd FA_Co_bar_0_7 gnd FA_S_bar_0_7 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@8 FA_Co_bar_0_0 x0y2 FA_S_bar_0_1 FA_Co_bar_1_0 gnd FA_S_bar_1_0 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@9 FA_Co_bar_0_1 x1y2 FA_S_bar_0_2 FA_Co_bar_1_1 gnd FA_S_bar_1_1 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@10 FA_Co_bar_0_2 x2y2 FA_S_bar_0_3 FA_Co_bar_1_2 gnd FA_S_bar_1_2 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@11 FA_Co_bar_0_3 x3y2 FA_S_bar_0_4 FA_Co_bar_1_3 gnd FA_S_bar_1_3 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@12 FA_Co_bar_0_4 x4y2 FA_S_bar_0_5 FA_Co_bar_1_4 gnd FA_S_bar_1_4 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@13 FA_Co_bar_0_5 x5y2 FA_S_bar_0_6 FA_Co_bar_1_5 gnd FA_S_bar_1_5 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@14 FA_Co_bar_0_6 x6y2 FA_S_bar_0_7 FA_Co_bar_1_6 gnd FA_S_bar_1_6 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@15 FA_Co_bar_0_7 INVx7y2 gnd FA_Co_bar_1_7 gnd FA_S_bar_1_7 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@16 FA_Co_bar_1_0 INVx0y3 FA_S_bar_1_1 FA_Co_bar_2_0 gnd FA_S_bar_2_0 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@17 FA_Co_bar_1_1 INVx1y3 FA_S_bar_1_2 FA_Co_bar_2_1 gnd FA_S_bar_2_1 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@18 FA_Co_bar_1_2 INVx2y3 FA_S_bar_1_3 FA_Co_bar_2_2 gnd FA_S_bar_2_2 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@19 FA_Co_bar_1_3 INVx3y3 FA_S_bar_1_4 FA_Co_bar_2_3 gnd FA_S_bar_2_3 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@20 FA_Co_bar_1_4 INVx4y3 FA_S_bar_1_5 FA_Co_bar_2_4 gnd FA_S_bar_2_4 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@21 FA_Co_bar_1_5 INVx5y3 FA_S_bar_1_6 FA_Co_bar_2_5 gnd FA_S_bar_2_5 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@22 FA_Co_bar_1_6 INVx6y3 FA_S_bar_1_7 FA_Co_bar_2_6 gnd FA_S_bar_2_6 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@23 FA_Co_bar_1_7 x7y3 vdd FA_Co_bar_2_7 gnd FA_S_bar_2_7 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@24 FA_Co_bar_2_0 x0y4 FA_S_bar_2_1 FA_Co_bar_3_0 gnd FA_S_bar_3_0 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@25 FA_Co_bar_2_1 x1y4 FA_S_bar_2_2 FA_Co_bar_3_1 gnd FA_S_bar_3_1 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@26 FA_Co_bar_2_2 x2y4 FA_S_bar_2_3 FA_Co_bar_3_2 gnd FA_S_bar_3_2 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@27 FA_Co_bar_2_3 x3y4 FA_S_bar_2_4 FA_Co_bar_3_3 gnd FA_S_bar_3_3 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@28 FA_Co_bar_2_4 x4y4 FA_S_bar_2_5 FA_Co_bar_3_4 gnd FA_S_bar_3_4 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@29 FA_Co_bar_2_5 x5y4 FA_S_bar_2_6 FA_Co_bar_3_5 gnd FA_S_bar_3_5 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@30 FA_Co_bar_2_6 x6y4 FA_S_bar_2_7 FA_Co_bar_3_6 gnd FA_S_bar_3_6 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@31 FA_Co_bar_2_7 INVx7y4 gnd FA_Co_bar_3_7 gnd FA_S_bar_3_7 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@32 FA_Co_bar_3_0 INVx0y5 FA_S_bar_3_1 FA_Co_bar_4_0 gnd FA_S_bar_4_0 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@33 FA_Co_bar_3_1 INVx1y5 FA_S_bar_3_2 FA_Co_bar_4_1 gnd FA_S_bar_4_1 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@34 FA_Co_bar_3_2 INVx2y5 FA_S_bar_3_3 FA_Co_bar_4_2 gnd FA_S_bar_4_2 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@35 FA_Co_bar_3_3 INVx3y5 FA_S_bar_3_4 FA_Co_bar_4_3 gnd FA_S_bar_4_3 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@36 FA_Co_bar_3_4 INVx4y5 FA_S_bar_3_5 FA_Co_bar_4_4 gnd FA_S_bar_4_4 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@37 FA_Co_bar_3_5 INVx5y5 FA_S_bar_3_6 FA_Co_bar_4_5 gnd FA_S_bar_4_5 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@38 FA_Co_bar_3_6 INVx6y5 FA_S_bar_3_7 FA_Co_bar_4_6 gnd FA_S_bar_4_6 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@39 FA_Co_bar_3_7 x7y5 vdd FA_Co_bar_4_7 gnd FA_S_bar_4_7 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@40 FA_Co_bar_4_0 x0y6 FA_S_bar_4_1 FA_Co_bar_5_0 gnd FA_S_bar_5_0 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@41 FA_Co_bar_4_1 x1y6 FA_S_bar_4_2 FA_Co_bar_5_1 gnd FA_S_bar_5_1 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@42 FA_Co_bar_4_2 x2y6 FA_S_bar_4_3 FA_Co_bar_5_2 gnd FA_S_bar_5_2 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@43 FA_Co_bar_4_3 x3y6 FA_S_bar_4_4 FA_Co_bar_5_3 gnd FA_S_bar_5_3 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@44 FA_Co_bar_4_4 x4y6 FA_S_bar_4_5 FA_Co_bar_5_4 gnd FA_S_bar_5_4 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@45 FA_Co_bar_4_5 x5y6 FA_S_bar_4_6 FA_Co_bar_5_5 gnd FA_S_bar_5_5 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@46 FA_Co_bar_4_6 x6y6 FA_S_bar_4_7 FA_Co_bar_5_6 gnd FA_S_bar_5_6 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@47 FA_Co_bar_4_7 INVx7y6 gnd FA_Co_bar_5_7 gnd FA_S_bar_5_7 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@48 FA_Co_bar_5_0 x0y7 FA_S_bar_5_1 FA_Co_bar_6_0 gnd FA_S_bar_6_0 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@49 FA_Co_bar_5_1 x1y7 FA_S_bar_5_2 FA_Co_bar_6_1 gnd FA_S_bar_6_1 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@50 FA_Co_bar_5_2 x2y7 FA_S_bar_5_3 FA_Co_bar_6_2 gnd FA_S_bar_6_2 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@51 FA_Co_bar_5_3 x3y7 FA_S_bar_5_4 FA_Co_bar_6_3 gnd FA_S_bar_6_3 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@52 FA_Co_bar_5_4 x4y7 FA_S_bar_5_5 FA_Co_bar_6_4 gnd FA_S_bar_6_4 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@53 FA_Co_bar_5_5 x5y7 FA_S_bar_5_6 FA_Co_bar_6_5 gnd FA_S_bar_6_5 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@54 FA_Co_bar_5_6 x6y7 FA_S_bar_5_7 FA_Co_bar_6_6 gnd FA_S_bar_6_6 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@55 FA_Co_bar_5_7 INVx7y7 vdd FA_Co_bar_6_7 gnd FA_S_bar_6_7 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@56 net@2008 gnd net@1556 FA_Co_bar_7_0 gnd FA_S_bar_7_0 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@57 net@2026 FA_Co_bar_7_0 net@2028 FA_Co_bar_7_1 gnd FA_S_bar_7_1 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@58 net@2019 FA_Co_bar_7_1 net@1578 FA_Co_bar_7_2 gnd FA_S_bar_7_2 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@59 net@2031 FA_Co_bar_7_2 net@2033 FA_Co_bar_7_3 gnd FA_S_bar_7_3 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@60 net@2021 FA_Co_bar_7_3 net@1600 FA_Co_bar_7_4 gnd FA_S_bar_7_4 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@61 net@2036 FA_Co_bar_7_4 net@2037 FA_Co_bar_7_5 gnd FA_S_bar_7_5 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@62 net@2023 FA_Co_bar_7_5 net@1622 FA_Co_bar_7_6 gnd FA_S_bar_7_6 vdd project_kansu3__fa_c3x_s2x
+Xfa_c3x_s2x@63 net@2040 FA_Co_bar_7_6 gnd Cdrop gnd FA_S_bar_7_7 vdd project_kansu3__fa_c3x_s2x
+Xinv@0 net@2025 gnd vdd net@2026 project_kansu3__inv1x
+Xinv@1 net@1567 gnd vdd net@2028 project_kansu3__inv1x
+Xinv@2 net@2030 gnd vdd net@2031 project_kansu3__inv1x
+Xinv@3 net@1589 gnd vdd net@2033 project_kansu3__inv1x
+Xinv@4 net@2035 gnd vdd net@2036 project_kansu3__inv1x
+Xinv@5 net@1611 gnd vdd net@2037 project_kansu3__inv1x
+Xinv@6 net@2041 gnd vdd net@2040 project_kansu3__inv1x
+Xinv@7 FA_S_bar_1_0 gnd vdd net@2048 project_kansu3__inv1x
+Xinv@8 FA_S_bar_3_0 gnd vdd net@2052 project_kansu3__inv1x
+Xinv@9 FA_S_bar_5_0 gnd vdd net@2057 project_kansu3__inv1x
+Xinv@10 FA_S_bar_7_0 gnd vdd net@2679 project_kansu3__inv1x
+Xinv@11 FA_S_bar_7_2 gnd vdd net@2067 project_kansu3__inv1x
+Xinv@12 FA_S_bar_7_4 gnd vdd net@2071 project_kansu3__inv1x
+Xinv@13 FA_S_bar_7_6 gnd vdd net@2303 project_kansu3__inv1x
+Xnand1x@1 net@270 net@266 gnd vdd INVx1y0 project_kansu3__nand1x
+Xnand1x@2 net@279 net@266 gnd vdd INVx2y0 project_kansu3__nand1x
+Xnand1x@3 net@285 net@266 gnd vdd INVx3y0 project_kansu3__nand1x
+Xnand1x@4 net@291 net@266 gnd vdd INVx4y0 project_kansu3__nand1x
+Xnand1x@5 net@297 net@266 gnd vdd INVx5y0 project_kansu3__nand1x
+Xnand1x@6 net@303 net@266 gnd vdd INVx6y0 project_kansu3__nand1x
+Xnand1x@8 net@264 net@311 gnd vdd INVx0y1 project_kansu3__nand1x
+Xnand1x@9 net@270 net@311 gnd vdd INVx1y1 project_kansu3__nand1x
+Xnand1x@10 net@279 net@311 gnd vdd INVx2y1 project_kansu3__nand1x
+Xnand1x@11 net@285 net@311 gnd vdd INVx3y1 project_kansu3__nand1x
+Xnand1x@12 net@291 net@311 gnd vdd INVx4y1 project_kansu3__nand1x
+Xnand1x@13 net@297 net@311 gnd vdd INVx5y1 project_kansu3__nand1x
+Xnand1x@14 net@303 net@311 gnd vdd INVx6y1 project_kansu3__nand1x
+Xnand1x@23 x7_FF_out net@391 gnd vdd INVx7y2 project_kansu3__nand1x
+Xnand1x@24 net@264 net@431 gnd vdd INVx0y3 project_kansu3__nand1x
+Xnand1x@25 net@270 net@431 gnd vdd INVx1y3 project_kansu3__nand1x
+Xnand1x@26 net@279 net@431 gnd vdd INVx2y3 project_kansu3__nand1x
+Xnand1x@27 net@285 net@431 gnd vdd INVx3y3 project_kansu3__nand1x
+Xnand1x@28 net@291 net@431 gnd vdd INVx4y3 project_kansu3__nand1x
+Xnand1x@29 net@297 net@431 gnd vdd INVx5y3 project_kansu3__nand1x
+Xnand1x@30 net@303 net@431 gnd vdd INVx6y3 project_kansu3__nand1x
+Xnand1x@39 x7_FF_out net@480 gnd vdd INVx7y4 project_kansu3__nand1x
+Xnand1x@40 net@264 net@363 gnd vdd INVx0y5 project_kansu3__nand1x
+Xnand1x@41 net@270 net@363 gnd vdd INVx1y5 project_kansu3__nand1x
+Xnand1x@42 net@279 net@363 gnd vdd INVx2y5 project_kansu3__nand1x
+Xnand1x@43 net@285 net@363 gnd vdd INVx3y5 project_kansu3__nand1x
+Xnand1x@44 net@291 net@363 gnd vdd INVx4y5 project_kansu3__nand1x
+Xnand1x@45 net@297 net@363 gnd vdd INVx5y5 project_kansu3__nand1x
+Xnand1x@46 net@303 net@363 gnd vdd INVx6y5 project_kansu3__nand1x
+Xnand1x@55 x7_FF_out net@366 gnd vdd INVx7y6 project_kansu3__nand1x
+Xnand1x@63 x7_FF_out net@369 gnd vdd INVx7y7 project_kansu3__nand1x
+XstaticFF@2 clk FA_Co_bar_6_7 gnd vdd net@2041 project_kansu3__staticFF
+XstaticFF@3 clk FA_S_bar_6_7 gnd vdd net@1622 project_kansu3__staticFF
+XstaticFF@4 clk FA_Co_bar_6_6 gnd vdd net@2023 project_kansu3__staticFF
+XstaticFF@5 clk FA_S_bar_6_6 gnd vdd net@1611 project_kansu3__staticFF
+XstaticFF@6 clk FA_Co_bar_6_5 gnd vdd net@2035 project_kansu3__staticFF
+XstaticFF@7 clk FA_S_bar_6_5 gnd vdd net@1600 project_kansu3__staticFF
+XstaticFF@8 clk FA_Co_bar_6_4 gnd vdd net@2021 project_kansu3__staticFF
+XstaticFF@9 clk FA_S_bar_6_4 gnd vdd net@1589 project_kansu3__staticFF
+XstaticFF@10 clk FA_Co_bar_6_3 gnd vdd net@2030 project_kansu3__staticFF
+XstaticFF@11 clk FA_S_bar_6_3 gnd vdd net@1578 project_kansu3__staticFF
+XstaticFF@12 clk FA_Co_bar_6_2 gnd vdd net@2019 project_kansu3__staticFF
+XstaticFF@13 clk FA_S_bar_6_2 gnd vdd net@1567 project_kansu3__staticFF
+XstaticFF@14 clk FA_Co_bar_6_1 gnd vdd net@2025 project_kansu3__staticFF
+XstaticFF@15 clk FA_S_bar_6_1 gnd vdd net@1556 project_kansu3__staticFF
+XstaticFF@16 clk FA_Co_bar_6_0 gnd vdd net@2008 project_kansu3__staticFF
+XstaticFF@17 clk FA_S_bar_7_7 gnd vdd z15 project_kansu3__staticFF
+XstaticFF@18 clk net@2303 gnd vdd z14 project_kansu3__staticFF
+XstaticFF@19 clk FA_S_bar_7_5 gnd vdd z13 project_kansu3__staticFF
+XstaticFF@20 clk net@2071 gnd vdd z12 project_kansu3__staticFF
+XstaticFF@21 clk FA_S_bar_7_3 gnd vdd z11 project_kansu3__staticFF
+XstaticFF@22 clk net@2067 gnd vdd z10 project_kansu3__staticFF
+XstaticFF@23 clk FA_S_bar_7_1 gnd vdd z9 project_kansu3__staticFF
+XstaticFF@24 clk net@2679 gnd vdd z8 project_kansu3__staticFF
+XstaticFF@25 clk y0 gnd vdd net@266 project_kansu3__staticFF
+XstaticFF@26 clk y1 gnd vdd net@311 project_kansu3__staticFF
+XstaticFF@28 clk y2 gnd vdd net@391 project_kansu3__staticFF
+XstaticFF@29 clk y3 gnd vdd net@431 project_kansu3__staticFF
+XstaticFF@30 clk y4 gnd vdd net@480 project_kansu3__staticFF
+XstaticFF@31 clk y5 gnd vdd net@363 project_kansu3__staticFF
+XstaticFF@32 clk y6 gnd vdd net@366 project_kansu3__staticFF
+XstaticFF@33 clk y7 gnd vdd net@369 project_kansu3__staticFF
+XstaticFF@34 clk x0y0 gnd vdd z0 project_kansu3__staticFF
+XstaticFF@35 clk FA_S_bar_0_0 gnd vdd z1 project_kansu3__staticFF
+XstaticFF@36 clk net@2048 gnd vdd z2 project_kansu3__staticFF
+XstaticFF@37 clk FA_S_bar_2_0 gnd vdd z3 project_kansu3__staticFF
+XstaticFF@38 clk net@2052 gnd vdd z4 project_kansu3__staticFF
+XstaticFF@39 clk FA_S_bar_4_0 gnd vdd z5 project_kansu3__staticFF
+XstaticFF@40 clk net@2057 gnd vdd z6 project_kansu3__staticFF
+XstaticFF@41 clk FA_S_bar_6_0 gnd vdd z7 project_kansu3__staticFF
+XstaticFF@42 clk x7 gnd vdd x7_FF_out project_kansu3__staticFF
+XstaticFF@43 clk x6 gnd vdd net@303 project_kansu3__staticFF
+XstaticFF@44 clk x5 gnd vdd net@297 project_kansu3__staticFF
+XstaticFF@45 clk x4 gnd vdd net@291 project_kansu3__staticFF
+XstaticFF@46 clk x3 gnd vdd net@285 project_kansu3__staticFF
+XstaticFF@47 clk x2 gnd vdd net@279 project_kansu3__staticFF
+XstaticFF@48 clk x1 gnd vdd net@270 project_kansu3__staticFF
+XstaticFF@49 clk x0 gnd vdd net@264 project_kansu3__staticFF
+
+* Spice Code nodes in cell cell 'csm_pipelined{sch}'
+.include "/home/vasid/.git/courses/dic_proj/spice_scripts/pathDelayCalc/script1.txt"
+.END

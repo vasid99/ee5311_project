@@ -1,23 +1,28 @@
 .include "/home/vasid/.git/courses/dic_proj/22nm_HP.pm"
-.params Vdd=1 changetol=1m
-Vdd vdd gnd dc {Vdd}
+.params Vdd=1
+vdd vdd gnd dc {Vdd}
+vclk clk gnd PULSE(0 {Vdd} 2000p 200p 200p 2500p 5000p)
 
-Vx0 x0 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vx1 x1 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vx2 x2 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vx3 x3 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vx4 x4 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vx5 x5 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vx6 x6 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vx7 x7 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
+Vx0 x0 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vx1 x1 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vx2 x2 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vx3 x3 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vx4 x4 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vx5 x5 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vx6 x6 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vx7 x7 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
 
-Vy0 y0 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vy1 y1 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vy2 y2 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vy3 y3 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vy4 y4 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vy5 y5 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vy6 y6 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
-Vy7 y7 gnd PULSE(0 {Vdd} 10n 200p 200p 5n 10n)
+Vy0 y0 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vy1 y1 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vy2 y2 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vy3 y3 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vy4 y4 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vy5 y5 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vy6 y6 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
+Vy7 y7 gnd PWL(1000p 0 1200p {1*Vdd} 6000p {1*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} )
 
-.tran 0 40n UIC
+.tran 0 12000p UIC
+
+.meas tran x0toz0 trig V(x7_FF_out)={0.5*Vdd} td={9n} cross=1 targ V(FA_S_bar_7_7)={0.5*Vdd} td={9n} cross=1
+.meas tran x0toclk trig V(x7_FF_out)={0.5*Vdd} td={9n} cross=1 targ V(clk)={0.5*Vdd} td={9n} cross=1
+.meas tran z15toclk trig V(clk)={0.5*Vdd} td={9n} cross=1 targ V(FA_S_bar_7_7)={0.5*Vdd} td={9n} cross=1

@@ -6,8 +6,12 @@ Vicon|ic
 Vlayout|lay
 Vschematic|sch
 
+# Tools:
+Oio|GDSOutputUnitsPerMeter()D1.0E11
+
 # Technologies:
 Tmocmos|MininumCapacitanceINmocmos()D0.01|MininumResistanceINmocmos()D0.1|ScaleFORmocmos()D11.0
+Tschematic|MininumCapacitanceINschematic()D0.01|MininumResistanceINschematic()D0.1
 
 # Cell FF_test;1{sch}
 CFF_test;1{sch}||schematic|1610275827103|1610276005344|
@@ -3419,7 +3423,7 @@ Ez15||D5G0.75;X1.5;|pin@48||O
 X
 
 # Cell csm_non_pipelined_reg;1{sch}
-Ccsm_non_pipelined_reg;1{sch}||schematic|1608638714421|1610303287376|
+Ccsm_non_pipelined_reg;1{sch}||schematic|1608638714421|1610315433415|
 Iand1x;1{ic}|and1x@0||111.5|140|RRR||D5G4;
 Iand1x;1{ic}|and1x@7||-113.5|140|RRR||D5G4;
 Iand1x;1{ic}|and1x@15||-112.5|108|RRR||D5G4;
@@ -4675,7 +4679,7 @@ NWire_Pin|pin@1547||110.5|-80||||
 NWire_Pin|pin@1549||-80.5|-91||||
 NWire_Pin|pin@1550||111.5|-97.5||||
 NWire_Pin|pin@1551||100|-84||||
-Ngeneric:Invisible-Pin|pin@1553||-201.5|79.5|||||SIM_spice_card(D5G1;)S".include \"/home/vasid/.git/courses/dic_proj/spice_scripts/pathDelayCalc/script2.txt\""
+Ngeneric:Invisible-Pin|pin@1553||-201.5|79.5|||||SIM_spice_card(D5G1;)S".include \"/home/vasid/.git/courses/dic_proj/spice_scripts/pathDelayCalc/script1.txt\""
 NWire_Pin|pin@1557||-80|-118.5||||
 NWire_Pin|pin@1560||-27|-123||||
 NWire_Pin|pin@1561||-11|-118.5||||
@@ -6267,7 +6271,6 @@ Awire|net@2799|||900|conn@30|y|20|220.5|staticFF@46|D|20|196.5
 Awire|net@2800|||900|conn@31|y|52|220.5|staticFF@47|D|52|196.5
 Awire|net@2801|||900|conn@32|y|84|220.5|staticFF@48|D|84|196.5
 Awire|net@2802|||900|conn@33|y|116|220.5|staticFF@49|D|116|196.5
-Awire|net@2803|||900|staticFF@42|Y|-108|186.5|pin@154||-108|161.5
 Awire|net@2804|||0|staticFF@43|Y|-75.5|186.5|pin@1637||-76|186.5
 Awire|net@2805|||2700|pin@156||-76|161.5|pin@1637||-76|186.5
 Awire|net@2806|||900|staticFF@44|Y|-44|186.5|pin@158||-44|161.5
@@ -6328,6 +6331,7 @@ Awire|x6y2|D5G1;||900|and1x@22|Y|-80.5|73|pin@663||-80.5|71.5
 Awire|x6y4|D5G1;||900|and1x@38|Y|-80.5|9|pin@839||-80.5|7.5
 Awire|x6y6|D5G1;||900|and1x@54|Y|-80.5|-55|pin@1015||-80.5|-56.5
 Awire|x6y7|D5G1;||0|and1x@62|Y|-80.5|-91|pin@1549||-80.5|-91
+Awire|x7_FF_out|D5G1;||900|staticFF@42|Y|-108|186.5|pin@154||-108|161.5
 Awire|x7y0|D5G1;||2700|pin@330||-113.5|135.5|and1x@7|Y|-113.5|137
 Awire|x7y1|D5G1;||2700|pin@586||-112.5|103.5|and1x@15|Y|-112.5|105
 Awire|x7y3|D5G1;||2700|pin@761||-112.5|30.5|and1x@31|Y|-112.5|41
@@ -6512,7 +6516,7 @@ Ez15||D5G0.75;X1.5;|pin@48||O
 X
 
 # Cell csm_pipelined;1{sch}
-Ccsm_pipelined;1{sch}||schematic|1608638714421|1610300334930|
+Ccsm_pipelined;1{sch}||schematic|1608638714421|1610316974492|
 Iand1x;1{ic}|and1x@0||111.5|140|RRR||D5G4;
 Iand1x;1{ic}|and1x@7||-113.5|140|RRR||D5G4;
 Iand1x;1{ic}|and1x@15||-112.5|108|RRR||D5G4;
@@ -7769,7 +7773,7 @@ NWire_Pin|pin@1547||110.5|-80||||
 NWire_Pin|pin@1549||-80.5|-91||||
 NWire_Pin|pin@1550||111.5|-97.5||||
 NWire_Pin|pin@1551||100|-84||||
-Ngeneric:Invisible-Pin|pin@1553||-201.5|79.5|||||SIM_spice_card(D5G1;)S".include \"/home/vasid/.git/courses/dic_proj/spice_scripts/pathDelayCalc/script2.txt\""
+Ngeneric:Invisible-Pin|pin@1553||-201.5|79.5|||||SIM_spice_card(D5G1;)S".include \"/home/vasid/.git/courses/dic_proj/spice_scripts/pathDelayCalc/script1.txt\""
 NWire_Pin|pin@1554||-124.5|-156.5||||
 NWire_Pin|pin@1555||-101.5|-156.5||||
 NWire_Pin|pin@1556||-92|-156.5||||
@@ -8109,7 +8113,6 @@ Awire|net@304|||1800|nand1x@6|A|-80.5|144|pin@182||-76|144
 Awire|net@305|||0|pin@181||-82.5|146.5|pin@183||-114.5|146.5
 Awire|net@306|||0|pin@183||-114.5|146.5|pin@152||-118.5|146.5
 Awire|net@307|||2700|and1x@7|B|-114.5|144|pin@183||-114.5|146.5
-Awire|net@309|||2700|pin@184||-108|144|pin@154||-108|161.5
 Awire|net@310|||1800|and1x@7|A|-112.5|144|pin@184||-108|144
 Awire|net@311|||0|pin@149||136.5|114.5|pin@185||110.5|114.5
 Awire|net@313|||2700|nand1x@8|B|110.5|112|pin@185||110.5|114.5
@@ -9513,6 +9516,7 @@ Awire|x6y2|D5G1;||900|and1x@22|Y|-80.5|73|pin@663||-80.5|71.5
 Awire|x6y4|D5G1;||900|and1x@38|Y|-80.5|9|pin@839||-80.5|7.5
 Awire|x6y6|D5G1;||900|and1x@54|Y|-80.5|-55|pin@1015||-80.5|-56.5
 Awire|x6y7|D5G1;||0|and1x@62|Y|-80.5|-91|pin@1549||-80.5|-91
+Awire|x7_FF_out|D5G1;||2700|pin@184||-108|144|pin@154||-108|161.5
 Awire|x7y0|D5G1;||2700|pin@330||-113.5|135.5|and1x@7|Y|-113.5|137
 Awire|x7y1|D5G1;||2700|pin@586||-112.5|103.5|and1x@15|Y|-112.5|105
 Awire|x7y3|D5G1;||2700|pin@761||-112.5|30.5|and1x@31|Y|-112.5|41
@@ -10704,24 +10708,28 @@ Awire|Y_out|D5G1;||900|and1x@0|Y|-3.5|-4|fa_c3x_s@0|Ci|-3.5|-6.5
 X
 
 # Cell sta_char_fa_critpath;1{sch}
-Csta_char_fa_critpath;1{sch}||schematic|1610198537643|1610205352576|
+Csta_char_fa_critpath;1{sch}||schematic|1610198537643|1610313067437|
 Ifa_c3x_s2x;1{ic}|Co_bar_load|D5G1;Y-7;|-14|-12.5|||D5G4;
 Ifa_c3x_s2x;1{ic}|S_bar_load|D5G1;Y-7;|0.5|-12.5|||D5G4;
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Ifa_c3x_s2x;1{ic}|dut|D5G1;Y-1.5;|-0.5|6|||D5G4;
-NGround|gnd|D5G1;|28|1||||
+NGround|gnd@0||28|1||||
 NWire_Pin|pin@0||-13|6||||
 NWire_Pin|pin@2||-1.5|14||||
 Ngeneric:Invisible-Pin|pin@5||22.5|15.5|||||SIM_spice_card(D5G1;)S".include \"/home/vasid/.git/courses/dic_proj/spice_scripts/fa_characterize/script1.txt\""
 NWire_Pin|pin@6||0.5|14||||
 NWire_Pin|pin@7||8.5|6||||
-NPower|vdd|D5G1;|20.5|-4.5||||
+NWire_Pin|pin@8||16|-4.5||||
+NWire_Pin|pin@9||32.5|3||||
+NPower|pwr@0||20.5|-4.5||||
 Awire|A_in|D5G1;X2;Y0.5;||2700|dut|A|0.5|11|pin@6||0.5|14
 Awire|B_in|D5G1;X4;||1800|dut|B|4.5|6|pin@7||8.5|6
 Awire|Ci_in|D5G1;X-2;Y0.5;||2700|dut|Ci|-1.5|11|pin@2||-1.5|14
 Awire|Co_bar_out|D5G1;||900|pin@0||-13|6|Co_bar_load|A|-13|-7.5
 Awire|S_bar_out|D5G1;||900|dut|S_bar|-0.5|0.5|S_bar_load|Ci|-0.5|-7.5
+Awire|gnd|D5G1;||1800|gnd@0||28|3|pin@9||32.5|3
 Awire|net@1|||0|dut|Co_bar|-5.5|6|pin@0||-13|6
+Awire|vdd|D5G1;||0|pwr@0||20.5|-4.5|pin@8||16|-4.5
 X
 
 # Cell sta_char_fa_vmerge1;1{sch}
@@ -10767,7 +10775,7 @@ Awire|net@0|||2700|inv1x@0|A|-0.5|-8.5|pin@9||-0.5|-7
 X
 
 # Cell sta_char_ff_vmerge;1{sch}
-Csta_char_ff_vmerge;1{sch}||schematic|1610300866744|1610302646413|
+Csta_char_ff_vmerge;1{sch}||schematic|1610300866744|1610305319613|
 Ngeneric:Facet-Center|art@0||0|0||||AV
 Ifa_c3x_s2x;1{ic}|fa_c3x_s@0||8|2.5|||D5G4;
 NGround|gnd@0||44.5|0||||
@@ -10780,7 +10788,7 @@ NWire_Pin|pin@80||-0.5|43.5||||
 NPower|pwr@0||43|13||||
 IstaticFF;1{ic}|staticFF@1||-0.5|31|RRR||D5G4;
 Awire|D|D5G1;||2700|staticFF@1|D|-0.5|36|pin@80||-0.5|43.5
-Awire|Yout|D5G1;||900|staticFF@1|Y|-0.5|26|pin@76||-0.5|18.5
+Awire|Y_out|D5G1;||900|staticFF@1|Y|-0.5|26|pin@76||-0.5|18.5
 Awire|clk1|D5G1;||0|staticFF@1|clk|-7.5|31|pin@79||-24.5|31
 Awire|net@67|||1800|pin@76||-0.5|18.5|pin@77||7|18.5
 Awire|net@68|||900|pin@77||7|18.5|pin@78||7|12
@@ -10788,7 +10796,7 @@ Awire|net@69|||900|pin@78||7|12|fa_c3x_s@0|Ci|7|7.5
 X
 
 # Cell sta_char_ff_x7;1{sch}
-Csta_char_ff_x7;1{sch}||schematic|1610300866744|1610302586156|
+Csta_char_ff_x7;1{sch}||schematic|1610300866744|1610305185148|
 Iand1x;1{ic}|and1x@0||-8.5|79|RRR||D5G4;
 Iand1x;1{ic}|and1x@1||-7.5|47|RRR||D5G4;
 Iand1x;1{ic}|and1x@2||-7.5|-17|RRR||D5G4;
@@ -10853,7 +10861,7 @@ Awire|INVx7y2|D5G1;||900|nand1x@0|Y|-7.5|12.5|pin@39||-7.5|10.5
 Awire|INVx7y4|D5G1;||900|nand1x@1|Y|-7.5|-51.5|pin@47||-7.5|-53.5
 Awire|INVx7y6|D5G1;||900|nand1x@2|Y|-7.5|-115.5|pin@55||-7.5|-117.5
 Awire|INVx7y7|D5G1;||2700|pin@58||-7.5|-158.5|nand1x@3|Y|-7.5|-148
-Awire|Yout|D5G1;||900|staticFF@0|Y|-3|125.5|pin@8||-3|100.5
+Awire|Y_out|D5G1;||900|staticFF@0|Y|-3|125.5|pin@8||-3|100.5
 Awire|clk1|D5G1;||900|staticFF@0|clk|-10|130.5|pin@64||-10|112
 Awire|net@1|||2700|pin@34||-7.5|33.5|pin@35||-7.5|42.5
 Awire|net@5|||2700|pin@54||-7.5|-126.5|pin@55||-7.5|-117.5

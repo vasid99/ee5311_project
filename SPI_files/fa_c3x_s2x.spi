@@ -351,7 +351,8 @@ R205 A#5nmos@0_poly-right##1 A#39nmos@2_poly-left 8.267
 R206 Ci#26pin@88_metal-3 Ci 0.244
 
 * Spice Code nodes in cell cell 'fa_c3x_s2x{lay}'
-.include "S:/DIC_sims/22nm_HP_HP.pm"
+*.include "S:/DIC_sims/22nm_HP_HP.pm"
+.include "/home/vasid/.git/courses/dic_proj/22nm_HP.pm"
 .ENDS fa_c3x_s2x
 
 
