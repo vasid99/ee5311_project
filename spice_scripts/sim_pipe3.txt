@@ -38,8 +38,8 @@ Vy7 y7 gnd PWL(500p 0 700p {0*Vdd} 5500p {0*Vdd} 5700p {1*Vdd} 10500p {1*Vdd} 10
 .meas tran val_0_z14 find V(z14) at=5300p
 .meas tran val_0_z15 find V(z15) at=5300p
 
-.meas tran delay_0_clk_7_7 trig V(clk) = {0.5*Vdd} td = 1000p cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 1000p cross = 1
-.meas tran delay_0_clk_6_1 trig V(clk) = {0.5*Vdd} td = 1000p cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 1000p cross = 1
+.meas tran delay_0_clk_7_7 trig V(clk) = {0.5*Vdd} td = 1000p fall = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 1000p cross = 1
+.meas tran delay_0_clk_6_1 trig V(clk) = {0.5*Vdd} td = 1000p fall = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 1000p cross = 2
 
 .meas tran val_1_z0 find V(z0) at=10300p
 .meas tran val_1_z1 find V(z1) at=10300p
@@ -58,8 +58,8 @@ Vy7 y7 gnd PWL(500p 0 700p {0*Vdd} 5500p {0*Vdd} 5700p {1*Vdd} 10500p {1*Vdd} 10
 .meas tran val_1_z14 find V(z14) at=10300p
 .meas tran val_1_z15 find V(z15) at=10300p
 
-.meas tran delay_1_clk_7_7 trig V(clk) = {0.5*Vdd} td = 6000p cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 6000p cross = 1
-.meas tran delay_1_clk_6_1 trig V(clk) = {0.5*Vdd} td = 6000p cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 6000p cross = 1
+.meas tran delay_1_clk_7_7 trig V(clk) = {0.5*Vdd} td = 6000p fall = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 6000p cross = 1
+.meas tran delay_1_clk_6_1 trig V(clk) = {0.5*Vdd} td = 6000p fall = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 6000p cross = 2
 
 .meas tran val_2_z0 find V(z0) at=15300p
 .meas tran val_2_z1 find V(z1) at=15300p
@@ -78,8 +78,8 @@ Vy7 y7 gnd PWL(500p 0 700p {0*Vdd} 5500p {0*Vdd} 5700p {1*Vdd} 10500p {1*Vdd} 10
 .meas tran val_2_z14 find V(z14) at=15300p
 .meas tran val_2_z15 find V(z15) at=15300p
 
-.meas tran delay_2_clk_7_7 trig V(clk) = {0.5*Vdd} td = 11000p cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 11000p cross = 1
-.meas tran delay_2_clk_6_1 trig V(clk) = {0.5*Vdd} td = 11000p cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 11000p cross = 1
+.meas tran delay_2_clk_7_7 trig V(clk) = {0.5*Vdd} td = 11000p fall = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 11000p cross = 1
+.meas tran delay_2_clk_6_1 trig V(clk) = {0.5*Vdd} td = 11000p fall = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 11000p cross = 2
 
 .meas tran val_3_z0 find V(z0) at=20300p
 .meas tran val_3_z1 find V(z1) at=20300p
@@ -98,8 +98,8 @@ Vy7 y7 gnd PWL(500p 0 700p {0*Vdd} 5500p {0*Vdd} 5700p {1*Vdd} 10500p {1*Vdd} 10
 .meas tran val_3_z14 find V(z14) at=20300p
 .meas tran val_3_z15 find V(z15) at=20300p
 
-.meas tran delay_3_clk_7_7 trig V(clk) = {0.5*Vdd} td = 16000p cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 16000p cross = 1
-.meas tran delay_3_clk_6_1 trig V(clk) = {0.5*Vdd} td = 16000p cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 16000p cross = 1
+.meas tran delay_3_clk_7_7 trig V(clk) = {0.5*Vdd} td = 16000p fall = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 16000p cross = 1
+.meas tran delay_3_clk_6_1 trig V(clk) = {0.5*Vdd} td = 16000p fall = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 16000p cross = 2
 
 
 .tran 0 37000p UIC

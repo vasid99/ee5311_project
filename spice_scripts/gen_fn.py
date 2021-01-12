@@ -47,12 +47,12 @@ for i in range(n):
 
 # all times in picoseconds
 Vdd = 1
-T0 = 1000 # time at PWL initiation
+T0 = 500 # time at PWL initiation
 T  = 5000 # time per combination
-T0_clk = T0 + T//2 # time at PWL initiation for clock
+T0_clk = 1000 # time at PWL initiation for clock
 dt = 200  # rise & fall time
 dt_clk = 100 # rise & fall time for clock
-Tsim = 2*T0 + n*T
+Tsim = 2*max(T0,T0_clk) + (n+3)*T
 
 incpath = "../22nm_HP.pm"
 header=".include \"%s\"\n.params Vdd=%f\nvdd vdd gnd dc {Vdd}\nvclk clk gnd PULSE(0 {Vdd} %dp %dp %dp %dp %dp)\n"%(incpath,Vdd,T0_clk,dt_clk,dt_clk,T//2,T)
@@ -98,7 +98,7 @@ for num in range(n):
 		meascode += ".meas tran val_%d_z%d find V(z%d) at=%dp\n"%(num,i,i,t+T-dt)
 	
 	if dchk:
-		meascode += "\n.meas tran delay_%d_clk_7_7 trig V(clk) = {0.5*Vdd} td = %dp cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = %dp cross = 1\n.meas tran delay_%d_clk_6_1 trig V(clk) = {0.5*Vdd} td = %dp cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = %dp cross = 1\n\n"%(num,tclk,tclk,num,tclk,tclk)
+		meascode += "\n.meas tran delay_%d_clk_7_7 trig V(clk) = {0.5*Vdd} td = %dp fall = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = %dp cross = 1\n.meas tran delay_%d_clk_6_1 trig V(clk) = {0.5*Vdd} td = %dp fall = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = %dp cross = 2\n\n"%(num,tclk,tclk,num,tclk,tclk)
 	
 	t += T
 	tclk += T
