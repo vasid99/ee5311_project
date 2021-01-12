@@ -1,14 +1,12 @@
 *** SPICE deck for cell sta_char_fa_critpath{sch} from library project_kansu3
 *** Created on Sat Jan 09, 2021 18:52:17
-*** Last revised on Sat Jan 09, 2021 20:45:52
-*** Written on Sun Jan 10, 2021 21:58:09 by Electric VLSI Design System, version 9.07
+*** Last revised on Mon Jan 11, 2021 02:41:07
+*** Written on Tue Jan 12, 2021 15:16:37 by Electric VLSI Design System, version 9.07
 *** Layout tech: mocmos, foundry MOSIS
 *** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
 
 *** SUBCIRCUIT project_kansu3__fa_c3x_s2x FROM CELL fa_c3x_s2x{sch}
-.SUBCKT project_kansu3__fa_c3x_s2x A B Ci Co_bar S_bar
-** GLOBAL gnd
-** GLOBAL vdd
+.SUBCKT project_kansu3__fa_c3x_s2x A B Ci Co_bar gnd S_bar vdd
 Mnmos@0 net@33 B net@40 gnd nmos_HP L=0.022U W=0.132U
 Mnmos@1 S_bar Ci net@33 gnd nmos_HP L=0.022U W=0.132U
 Mnmos@2 net@40 A gnd gnd nmos_HP L=0.022U W=0.132U
@@ -35,12 +33,10 @@ Mpmos@10 vdd A net@62 vdd pmos_HP L=0.022U W=0.176U
 Mpmos@11 net@62 B Co_bar vdd pmos_HP L=0.022U W=0.176U
 .ENDS project_kansu3__fa_c3x_s2x
 
-.global gnd vdd
-
 *** TOP LEVEL CELL: sta_char_fa_critpath{sch}
-XCo_bar_load Co_bar_out Co_bar_load_B Co_bar_load_Ci Co_bar_load_Co_bar Co_bar_load_S_bar project_kansu3__fa_c3x_s2x
-XS_bar_load S_bar_load_A S_bar_load_B S_bar_out S_bar_load_Co_bar S_bar_load_S_bar project_kansu3__fa_c3x_s2x
-Xdut A_in B_in Ci_in Co_bar_out S_bar_out project_kansu3__fa_c3x_s2x
+XCo_bar_load Co_bar_out Co_bar_load_B Co_bar_load_Ci Co_bar_load_Co_bar gnd Co_bar_load_S_bar vdd project_kansu3__fa_c3x_s2x
+XS_bar_load S_bar_load_A S_bar_load_B S_bar_out S_bar_load_Co_bar gnd S_bar_load_S_bar vdd project_kansu3__fa_c3x_s2x
+Xdut A_in B_in Ci_in Co_bar_out gnd S_bar_out vdd project_kansu3__fa_c3x_s2x
 
 * Spice Code nodes in cell cell 'sta_char_fa_critpath{sch}'
 .include "/home/vasid/.git/courses/dic_proj/spice_scripts/fa_characterize/script1.txt"
