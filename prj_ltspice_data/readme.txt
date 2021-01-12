@@ -1,1 +1,0 @@
-Keep ltspice data here like .spi files, log files etc

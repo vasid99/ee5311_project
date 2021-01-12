@@ -1,0 +1,10 @@
+.include "../22nm_HP.pm"
+.params Vdd=1 t_d=3.998n 
+vdd vdd gnd dc {Vdd}
+vclk clk1 gnd PULSE(0 {Vdd} 1.9n 100p 100p 2n 4n)
+vD D gnd PULSE(0 {Vdd} 0n 100p 100p {t_d} {2*t_d})
+
+.meas tran hold_time  trig V(D)={0.5*Vdd} td={47n}  cross=1 targ V(clk1)={0.5*Vdd} td={47n}  cross=1
+.meas tran setup_time trig V(D)={0.5*Vdd} td={243n} cross=1 targ V(clk1)={0.5*Vdd} td={243n} cross=1
+
+.tran 0 300n UIC

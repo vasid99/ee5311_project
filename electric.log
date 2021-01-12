@@ -1,0 +1,508 @@
+Electric Version 9.07
+--------------- 0 --------------
+  Tue Jan 12 19:30:29 IST 2021
+ProcessKeyBinding 401 when=1610460029902 modifiers=200 code=12 char=ffff false false
+--------------- 1 --------------
+  Tue Jan 12 19:31:08 IST 2021
+Menu Activated: File | Open Library...
+--------------- 2 --------------
+  Tue Jan 12 19:31:26 IST 2021
+ProcessKeyBinding 401 when=1610460086922 modifiers=0 code=43 char=63(c) false true
+--------------- 3 --------------
+  Tue Jan 12 19:31:26 IST 2021
+ProcessKeyBinding 401 when=1610460086984 modifiers=0 code=48 char=68(h) false true
+--------------- 4 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 402 when=1610460087025 modifiers=0 code=43 char=63(c) false true
+--------------- 5 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 402 when=1610460087066 modifiers=0 code=48 char=68(h) false true
+--------------- 6 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 401 when=1610460087168 modifiers=0 code=41 char=61(a) false true
+--------------- 7 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 401 when=1610460087314 modifiers=0 code=52 char=72(r) false true
+--------------- 8 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 402 when=1610460087366 modifiers=0 code=41 char=61(a) false true
+--------------- 9 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 402 when=1610460087415 modifiers=0 code=52 char=72(r) false true
+--------------- 10 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 401 when=1610460087531 modifiers=40 code=10 char=ffff false true
+--------------- 11 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 401 when=1610460087694 modifiers=40 code=2d char=5f(_) false true
+--------------- 12 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 402 when=1610460087769 modifiers=40 code=2d char=5f(_) false true
+--------------- 13 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 402 when=1610460087785 modifiers=0 code=10 char=ffff false true
+--------------- 14 --------------
+  Tue Jan 12 19:31:27 IST 2021
+ProcessKeyBinding 401 when=1610460087936 modifiers=0 code=46 char=66(f) false true
+--------------- 15 --------------
+  Tue Jan 12 19:31:28 IST 2021
+ProcessKeyBinding 401 when=1610460088016 modifiers=0 code=41 char=61(a) false true
+--------------- 16 --------------
+  Tue Jan 12 19:31:28 IST 2021
+ProcessKeyBinding 402 when=1610460088037 modifiers=0 code=46 char=66(f) false true
+--------------- 17 --------------
+  Tue Jan 12 19:31:28 IST 2021
+ProcessKeyBinding 402 when=1610460088140 modifiers=0 code=41 char=61(a) false true
+--------------- 18 --------------
+  Tue Jan 12 19:31:28 IST 2021
+ProcessKeyBinding 401 when=1610460088202 modifiers=40 code=10 char=ffff false true
+--------------- 19 --------------
+  Tue Jan 12 19:31:28 IST 2021
+ProcessKeyBinding 401 when=1610460088346 modifiers=40 code=2d char=5f(_) false true
+--------------- 20 --------------
+  Tue Jan 12 19:31:28 IST 2021
+ProcessKeyBinding 402 when=1610460088429 modifiers=40 code=2d char=5f(_) false true
+--------------- 21 --------------
+  Tue Jan 12 19:31:28 IST 2021
+ProcessKeyBinding 402 when=1610460088487 modifiers=0 code=10 char=ffff false true
+--------------- 22 --------------
+  Tue Jan 12 19:31:29 IST 2021
+ProcessKeyBinding 401 when=1610460089368 modifiers=0 code=43 char=63(c) false true
+--------------- 23 --------------
+  Tue Jan 12 19:31:29 IST 2021
+ProcessKeyBinding 402 when=1610460089471 modifiers=0 code=43 char=63(c) false true
+--------------- 24 --------------
+  Tue Jan 12 19:31:29 IST 2021
+ProcessKeyBinding 401 when=1610460089575 modifiers=0 code=52 char=72(r) false true
+--------------- 25 --------------
+  Tue Jan 12 19:31:29 IST 2021
+ProcessKeyBinding 402 when=1610460089668 modifiers=0 code=52 char=72(r) false true
+--------------- 26 --------------
+  Tue Jan 12 19:31:29 IST 2021
+ProcessKeyBinding 401 when=1610460089803 modifiers=0 code=49 char=69(i) false true
+--------------- 27 --------------
+  Tue Jan 12 19:31:29 IST 2021
+ProcessKeyBinding 402 when=1610460089888 modifiers=0 code=49 char=69(i) false true
+--------------- 28 --------------
+  Tue Jan 12 19:31:30 IST 2021
+ProcessKeyBinding 401 when=1610460090012 modifiers=0 code=54 char=74(t) false true
+--------------- 29 --------------
+  Tue Jan 12 19:31:30 IST 2021
+ProcessKeyBinding 402 when=1610460090102 modifiers=0 code=54 char=74(t) false true
+--------------- 30 --------------
+  Tue Jan 12 19:31:30 IST 2021
+ProcessKeyBinding 401 when=1610460090618 modifiers=0 code=44 char=64(d) false true
+--------------- 31 --------------
+  Tue Jan 12 19:31:30 IST 2021
+ProcessKeyBinding 402 when=1610460090721 modifiers=0 code=44 char=64(d) false true
+--------------- 32 --------------
+  Tue Jan 12 19:31:30 IST 2021
+ProcessKeyBinding 401 when=1610460090732 modifiers=0 code=49 char=69(i) false true
+--------------- 33 --------------
+  Tue Jan 12 19:31:30 IST 2021
+ProcessKeyBinding 402 when=1610460090817 modifiers=0 code=49 char=69(i) false true
+--------------- 34 --------------
+  Tue Jan 12 19:31:30 IST 2021
+ProcessKeyBinding 401 when=1610460090872 modifiers=0 code=41 char=61(a) false true
+--------------- 35 --------------
+  Tue Jan 12 19:31:30 IST 2021
+ProcessKeyBinding 402 when=1610460090989 modifiers=0 code=41 char=61(a) false true
+--------------- 36 --------------
+  Tue Jan 12 19:31:31 IST 2021
+ProcessKeyBinding 401 when=1610460091155 modifiers=0 code=47 char=67(g) false true
+--------------- 37 --------------
+  Tue Jan 12 19:31:31 IST 2021
+ProcessKeyBinding 402 when=1610460091237 modifiers=0 code=47 char=67(g) false true
+--------------- 38 --------------
+  Tue Jan 12 19:31:44 IST 2021
+ProcessKeyBinding 401 when=1610460104593 modifiers=0 code=2e char=2e(.) false true
+--------------- 39 --------------
+  Tue Jan 12 19:31:44 IST 2021
+ProcessKeyBinding 402 when=1610460104665 modifiers=0 code=2e char=2e(.) false true
+--------------- 40 --------------
+  Tue Jan 12 19:31:44 IST 2021
+ProcessKeyBinding 401 when=1610460104738 modifiers=0 code=2e char=2e(.) false true
+--------------- 41 --------------
+  Tue Jan 12 19:31:44 IST 2021
+ProcessKeyBinding 402 when=1610460104828 modifiers=0 code=2e char=2e(.) false true
+--------------- 42 --------------
+  Tue Jan 12 19:31:45 IST 2021
+ProcessKeyBinding 401 when=1610460105900 modifiers=0 code=2f char=2f(/) false true
+--------------- 43 --------------
+  Tue Jan 12 19:31:45 IST 2021
+ProcessKeyBinding 402 when=1610460105980 modifiers=0 code=2f char=2f(/) false true
+--------------- 44 --------------
+  Tue Jan 12 19:31:47 IST 2021
+ProcessKeyBinding 401 when=1610460107832 modifiers=0 code=53 char=73(s) false true
+--------------- 45 --------------
+  Tue Jan 12 19:31:47 IST 2021
+ProcessKeyBinding 402 when=1610460107968 modifiers=0 code=53 char=73(s) false true
+--------------- 46 --------------
+  Tue Jan 12 19:31:49 IST 2021
+ProcessKeyBinding 401 when=1610460109247 modifiers=0 code=50 char=70(p) false true
+--------------- 47 --------------
+  Tue Jan 12 19:31:49 IST 2021
+ProcessKeyBinding 401 when=1610460109368 modifiers=0 code=49 char=69(i) false true
+--------------- 48 --------------
+  Tue Jan 12 19:31:49 IST 2021
+ProcessKeyBinding 402 when=1610460109414 modifiers=0 code=50 char=70(p) false true
+--------------- 49 --------------
+  Tue Jan 12 19:31:49 IST 2021
+ProcessKeyBinding 402 when=1610460109456 modifiers=0 code=49 char=69(i) false true
+--------------- 50 --------------
+  Tue Jan 12 19:31:49 IST 2021
+ProcessKeyBinding 401 when=1610460109640 modifiers=0 code=43 char=63(c) false true
+--------------- 51 --------------
+  Tue Jan 12 19:31:49 IST 2021
+ProcessKeyBinding 401 when=1610460109774 modifiers=0 code=45 char=65(e) false true
+--------------- 52 --------------
+  Tue Jan 12 19:31:49 IST 2021
+ProcessKeyBinding 402 when=1610460109807 modifiers=0 code=43 char=63(c) false true
+--------------- 53 --------------
+  Tue Jan 12 19:31:49 IST 2021
+ProcessKeyBinding 402 when=1610460109879 modifiers=0 code=45 char=65(e) false true
+--------------- 54 --------------
+  Tue Jan 12 19:31:50 IST 2021
+ProcessKeyBinding 401 when=1610460110478 modifiers=40 code=10 char=ffff false true
+--------------- 55 --------------
+  Tue Jan 12 19:31:50 IST 2021
+ProcessKeyBinding 401 when=1610460110652 modifiers=40 code=2d char=5f(_) false true
+--------------- 56 --------------
+  Tue Jan 12 19:31:50 IST 2021
+ProcessKeyBinding 402 when=1610460110726 modifiers=0 code=10 char=ffff false true
+--------------- 57 --------------
+  Tue Jan 12 19:31:50 IST 2021
+ProcessKeyBinding 402 when=1610460110742 modifiers=0 code=2d char=2d(-) false true
+--------------- 58 --------------
+  Tue Jan 12 19:31:50 IST 2021
+ProcessKeyBinding 401 when=1610460110869 modifiers=0 code=53 char=73(s) false true
+--------------- 59 --------------
+  Tue Jan 12 19:31:50 IST 2021
+ProcessKeyBinding 401 when=1610460110987 modifiers=0 code=43 char=63(c) false true
+--------------- 60 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 402 when=1610460111036 modifiers=0 code=53 char=73(s) false true
+--------------- 61 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 402 when=1610460111096 modifiers=0 code=43 char=63(c) false true
+--------------- 62 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 401 when=1610460111222 modifiers=0 code=52 char=72(r) false true
+--------------- 63 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 402 when=1610460111341 modifiers=0 code=52 char=72(r) false true
+--------------- 64 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 401 when=1610460111418 modifiers=0 code=49 char=69(i) false true
+--------------- 65 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 401 when=1610460111507 modifiers=0 code=50 char=70(p) false true
+--------------- 66 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 402 when=1610460111531 modifiers=0 code=49 char=69(i) false true
+--------------- 67 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 402 when=1610460111627 modifiers=0 code=50 char=70(p) false true
+--------------- 68 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 401 when=1610460111655 modifiers=0 code=54 char=74(t) false true
+--------------- 69 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 402 when=1610460111748 modifiers=0 code=54 char=74(t) false true
+--------------- 70 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 401 when=1610460111845 modifiers=0 code=53 char=73(s) false true
+--------------- 71 --------------
+  Tue Jan 12 19:31:51 IST 2021
+ProcessKeyBinding 402 when=1610460111986 modifiers=0 code=53 char=73(s) false true
+--------------- 72 --------------
+  Tue Jan 12 19:31:53 IST 2021
+ProcessKeyBinding 401 when=1610460113060 modifiers=0 code=2f char=2f(/) false true
+--------------- 73 --------------
+  Tue Jan 12 19:31:53 IST 2021
+ProcessKeyBinding 402 when=1610460113138 modifiers=0 code=2f char=2f(/) false true
+--------------- 74 --------------
+  Tue Jan 12 19:31:56 IST 2021
+ProcessKeyBinding 401 when=1610460116957 modifiers=80 code=11 char=ffff false false
+--------------- 75 --------------
+  Tue Jan 12 19:31:57 IST 2021
+Menu Activated: File | Save All Libraries
+--------------- 76 --------------
+  Tue Jan 12 19:31:57 IST 2021
+ProcessKeyBinding 400 when=1610460117160 modifiers=80 code=0 char=13 false false
+--------------- 77 --------------
+  Tue Jan 12 19:31:57 IST 2021
+ProcessKeyBinding 402 when=1610460117315 modifiers=0 code=11 char=ffff false false
+--------------- 78 --------------
+  Tue Jan 12 19:32:04 IST 2021
+Menu Activated: File | Preferences...
+--------------- 79 --------------
+  Tue Jan 12 19:32:36 IST 2021
+ProcessKeyBinding 401 when=1610460156357 modifiers=0 code=2e char=2e(.) false true
+--------------- 80 --------------
+  Tue Jan 12 19:32:36 IST 2021
+ProcessKeyBinding 402 when=1610460156436 modifiers=0 code=2e char=2e(.) false true
+--------------- 81 --------------
+  Tue Jan 12 19:32:36 IST 2021
+ProcessKeyBinding 401 when=1610460156488 modifiers=0 code=2e char=2e(.) false true
+--------------- 82 --------------
+  Tue Jan 12 19:32:36 IST 2021
+ProcessKeyBinding 402 when=1610460156560 modifiers=0 code=2e char=2e(.) false true
+--------------- 83 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 401 when=1610460163354 modifiers=0 code=43 char=63(c) false true
+--------------- 84 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 401 when=1610460163426 modifiers=0 code=48 char=68(h) false true
+--------------- 85 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 402 when=1610460163437 modifiers=0 code=43 char=63(c) false true
+--------------- 86 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 402 when=1610460163499 modifiers=0 code=48 char=68(h) false true
+--------------- 87 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 401 when=1610460163540 modifiers=0 code=41 char=61(a) false true
+--------------- 88 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 401 when=1610460163695 modifiers=0 code=52 char=72(r) false true
+--------------- 89 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 402 when=1610460163736 modifiers=0 code=41 char=61(a) false true
+--------------- 90 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 402 when=1610460163801 modifiers=0 code=52 char=72(r) false true
+--------------- 91 --------------
+  Tue Jan 12 19:32:43 IST 2021
+ProcessKeyBinding 401 when=1610460163869 modifiers=40 code=10 char=ffff false true
+--------------- 92 --------------
+  Tue Jan 12 19:32:44 IST 2021
+ProcessKeyBinding 401 when=1610460164189 modifiers=40 code=2d char=5f(_) false true
+--------------- 93 --------------
+  Tue Jan 12 19:32:44 IST 2021
+ProcessKeyBinding 402 when=1610460164283 modifiers=40 code=2d char=5f(_) false true
+--------------- 94 --------------
+  Tue Jan 12 19:32:44 IST 2021
+ProcessKeyBinding 402 when=1610460164331 modifiers=0 code=10 char=ffff false true
+--------------- 95 --------------
+  Tue Jan 12 19:32:44 IST 2021
+ProcessKeyBinding 401 when=1610460164545 modifiers=0 code=56 char=76(v) false true
+--------------- 96 --------------
+  Tue Jan 12 19:32:44 IST 2021
+ProcessKeyBinding 402 when=1610460164661 modifiers=0 code=56 char=76(v) false true
+--------------- 97 --------------
+  Tue Jan 12 19:32:44 IST 2021
+ProcessKeyBinding 401 when=1610460164830 modifiers=0 code=4d char=6d(m) false true
+--------------- 98 --------------
+  Tue Jan 12 19:32:44 IST 2021
+ProcessKeyBinding 402 when=1610460164911 modifiers=0 code=4d char=6d(m) false true
+--------------- 99 --------------
+  Tue Jan 12 19:32:44 IST 2021
+ProcessKeyBinding 401 when=1610460164973 modifiers=0 code=45 char=65(e) false true
+--------------- 100 --------------
+  Tue Jan 12 19:32:45 IST 2021
+ProcessKeyBinding 402 when=1610460165068 modifiers=0 code=45 char=65(e) false true
+--------------- 101 --------------
+  Tue Jan 12 19:32:45 IST 2021
+ProcessKeyBinding 401 when=1610460165169 modifiers=0 code=52 char=72(r) false true
+--------------- 102 --------------
+  Tue Jan 12 19:32:45 IST 2021
+ProcessKeyBinding 402 when=1610460165256 modifiers=0 code=52 char=72(r) false true
+--------------- 103 --------------
+  Tue Jan 12 19:32:45 IST 2021
+ProcessKeyBinding 401 when=1610460165398 modifiers=0 code=47 char=67(g) false true
+--------------- 104 --------------
+  Tue Jan 12 19:32:45 IST 2021
+ProcessKeyBinding 401 when=1610460165489 modifiers=0 code=45 char=65(e) false true
+--------------- 105 --------------
+  Tue Jan 12 19:32:45 IST 2021
+ProcessKeyBinding 402 when=1610460165511 modifiers=0 code=47 char=67(g) false true
+--------------- 106 --------------
+  Tue Jan 12 19:32:45 IST 2021
+ProcessKeyBinding 402 when=1610460165614 modifiers=0 code=45 char=65(e) false true
+--------------- 107 --------------
+  Tue Jan 12 19:32:48 IST 2021
+ProcessKeyBinding 401 when=1610460168320 modifiers=80 code=11 char=ffff false false
+--------------- 108 --------------
+  Tue Jan 12 19:32:48 IST 2021
+Menu Activated: File | Save All Libraries
+--------------- 109 --------------
+  Tue Jan 12 19:32:48 IST 2021
+ProcessKeyBinding 400 when=1610460168921 modifiers=80 code=0 char=13 false false
+--------------- 110 --------------
+  Tue Jan 12 19:32:49 IST 2021
+ProcessKeyBinding 402 when=1610460169114 modifiers=0 code=11 char=ffff false false
+--------------- 111 --------------
+  Tue Jan 12 19:32:51 IST 2021
+ProcessKeyBinding 401 when=1610460171328 modifiers=80 code=11 char=ffff false true
+--------------- 112 --------------
+  Tue Jan 12 19:32:51 IST 2021
+ProcessKeyBinding 402 when=1610460171660 modifiers=0 code=11 char=ffff false true
+--------------- 113 --------------
+  Tue Jan 12 19:32:55 IST 2021
+ProcessKeyBinding 401 when=1610460175610 modifiers=200 code=12 char=ffff false false
+--------------- 114 --------------
+  Tue Jan 12 19:32:58 IST 2021
+ProcessKeyBinding 401 when=1610460178362 modifiers=80 code=11 char=ffff false false
+--------------- 115 --------------
+  Tue Jan 12 19:32:58 IST 2021
+ProcessKeyBinding 402 when=1610460178768 modifiers=0 code=11 char=ffff false false
+--------------- 116 --------------
+  Tue Jan 12 19:32:59 IST 2021
+ProcessKeyBinding 401 when=1610460179615 modifiers=200 code=12 char=ffff false false
+--------------- 117 --------------
+  Tue Jan 12 19:33:17 IST 2021
+ProcessKeyBinding 401 when=1610460197305 modifiers=200 code=12 char=ffff false false
+--------------- 118 --------------
+  Tue Jan 12 19:33:52 IST 2021
+ProcessKeyBinding 401 when=1610460232159 modifiers=80 code=11 char=ffff false false
+--------------- 119 --------------
+  Tue Jan 12 19:33:52 IST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+Currently highlighted: 
+    SPICE code
+--------------- 120 --------------
+  Tue Jan 12 19:33:52 IST 2021
+ProcessKeyBinding 400 when=1610460232283 modifiers=80 code=0 char=12 false false
+--------------- 121 --------------
+  Tue Jan 12 19:34:22 IST 2021
+ProcessKeyBinding 401 when=1610460262321 modifiers=200 code=12 char=ffff false false
+--------------- 122 --------------
+  Tue Jan 12 19:37:12 IST 2021
+ProcessKeyBinding 401 when=1610460432338 modifiers=200 code=12 char=ffff false false
+--------------- 123 --------------
+  Tue Jan 12 19:37:18 IST 2021
+ProcessKeyBinding 401 when=1610460438305 modifiers=200 code=12 char=ffff false false
+--------------- 124 --------------
+  Tue Jan 12 19:37:44 IST 2021
+ProcessKeyBinding 401 when=1610460464425 modifiers=200 code=12 char=ffff false false
+--------------- 125 --------------
+  Tue Jan 12 19:37:47 IST 2021
+ProcessKeyBinding 401 when=1610460467743 modifiers=0 code=46 char=66(f) false true
+--------------- 126 --------------
+  Tue Jan 12 19:37:47 IST 2021
+ProcessKeyBinding 401 when=1610460467827 modifiers=0 code=41 char=61(a) false true
+--------------- 127 --------------
+  Tue Jan 12 19:37:47 IST 2021
+ProcessKeyBinding 402 when=1610460467850 modifiers=0 code=46 char=66(f) false true
+--------------- 128 --------------
+  Tue Jan 12 19:37:47 IST 2021
+ProcessKeyBinding 402 when=1610460467894 modifiers=0 code=41 char=61(a) false true
+--------------- 129 --------------
+  Tue Jan 12 19:37:47 IST 2021
+ProcessKeyBinding 401 when=1610460467962 modifiers=40 code=10 char=ffff false true
+--------------- 130 --------------
+  Tue Jan 12 19:37:48 IST 2021
+ProcessKeyBinding 401 when=1610460468612 modifiers=40 code=2d char=5f(_) false true
+--------------- 131 --------------
+  Tue Jan 12 19:37:48 IST 2021
+ProcessKeyBinding 402 when=1610460468665 modifiers=40 code=2d char=5f(_) false true
+--------------- 132 --------------
+  Tue Jan 12 19:37:48 IST 2021
+ProcessKeyBinding 402 when=1610460468823 modifiers=0 code=10 char=ffff false true
+--------------- 133 --------------
+  Tue Jan 12 19:37:53 IST 2021
+ProcessKeyBinding 401 when=1610460473218 modifiers=80 code=11 char=ffff false false
+--------------- 134 --------------
+  Tue Jan 12 19:37:53 IST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+Currently highlighted: 
+    SPICE code
+--------------- 135 --------------
+  Tue Jan 12 19:37:53 IST 2021
+ProcessKeyBinding 400 when=1610460473382 modifiers=80 code=0 char=12 false false
+--------------- 136 --------------
+  Tue Jan 12 19:39:39 IST 2021
+ProcessKeyBinding 401 when=1610460579444 modifiers=200 code=12 char=ffff false false
+--------------- 137 --------------
+  Tue Jan 12 19:39:57 IST 2021
+ProcessKeyBinding 401 when=1610460597431 modifiers=80 code=11 char=ffff false false
+--------------- 138 --------------
+  Tue Jan 12 19:39:57 IST 2021
+Menu Activated: File | Save All Libraries
+Currently highlighted: 
+    SPICE code
+--------------- 139 --------------
+  Tue Jan 12 19:39:57 IST 2021
+ProcessKeyBinding 400 when=1610460597549 modifiers=80 code=0 char=13 false false
+--------------- 140 --------------
+  Tue Jan 12 19:39:57 IST 2021
+ProcessKeyBinding 402 when=1610460597717 modifiers=0 code=11 char=ffff false false
+--------------- 141 --------------
+  Tue Jan 12 19:40:00 IST 2021
+ProcessKeyBinding 401 when=1610460600528 modifiers=80 code=11 char=ffff false false
+--------------- 142 --------------
+  Tue Jan 12 19:40:01 IST 2021
+ProcessKeyBinding 402 when=1610460601346 modifiers=0 code=11 char=ffff false false
+--------------- 143 --------------
+  Tue Jan 12 19:40:04 IST 2021
+ProcessKeyBinding 401 when=1610460604939 modifiers=0 code=2e char=2e(.) false true
+--------------- 144 --------------
+  Tue Jan 12 19:40:05 IST 2021
+ProcessKeyBinding 402 when=1610460604993 modifiers=0 code=2e char=2e(.) false true
+--------------- 145 --------------
+  Tue Jan 12 19:40:05 IST 2021
+ProcessKeyBinding 401 when=1610460605088 modifiers=0 code=2e char=2e(.) false true
+--------------- 146 --------------
+  Tue Jan 12 19:40:05 IST 2021
+ProcessKeyBinding 402 when=1610460605166 modifiers=0 code=2e char=2e(.) false true
+--------------- 147 --------------
+  Tue Jan 12 19:40:07 IST 2021
+ProcessKeyBinding 401 when=1610460607493 modifiers=80 code=11 char=ffff false false
+--------------- 148 --------------
+  Tue Jan 12 19:40:08 IST 2021
+Menu Activated: Tools | Simulation (Spice) | Write Spice Deck...
+Currently highlighted: 
+    SPICE code
+--------------- 149 --------------
+  Tue Jan 12 19:40:08 IST 2021
+ProcessKeyBinding 400 when=1610460608195 modifiers=80 code=0 char=12 false false
+--------------- 150 --------------
+  Tue Jan 12 19:40:21 IST 2021
+ProcessKeyBinding 401 when=1610460621474 modifiers=0 code=43 char=63(c) false true
+--------------- 151 --------------
+  Tue Jan 12 19:40:21 IST 2021
+ProcessKeyBinding 402 when=1610460621588 modifiers=0 code=43 char=63(c) false true
+--------------- 152 --------------
+  Tue Jan 12 19:40:21 IST 2021
+ProcessKeyBinding 401 when=1610460621598 modifiers=0 code=48 char=68(h) false true
+--------------- 153 --------------
+  Tue Jan 12 19:40:21 IST 2021
+ProcessKeyBinding 402 when=1610460621680 modifiers=0 code=48 char=68(h) false true
+--------------- 154 --------------
+  Tue Jan 12 19:40:21 IST 2021
+ProcessKeyBinding 401 when=1610460621704 modifiers=0 code=41 char=61(a) false true
+--------------- 155 --------------
+  Tue Jan 12 19:40:21 IST 2021
+ProcessKeyBinding 401 when=1610460621866 modifiers=0 code=52 char=72(r) false true
+--------------- 156 --------------
+  Tue Jan 12 19:40:21 IST 2021
+ProcessKeyBinding 402 when=1610460621908 modifiers=0 code=41 char=61(a) false true
+--------------- 157 --------------
+  Tue Jan 12 19:40:21 IST 2021
+ProcessKeyBinding 402 when=1610460621968 modifiers=0 code=52 char=72(r) false true
+--------------- 158 --------------
+  Tue Jan 12 19:40:22 IST 2021
+ProcessKeyBinding 401 when=1610460622032 modifiers=40 code=10 char=ffff false true
+--------------- 159 --------------
+  Tue Jan 12 19:40:22 IST 2021
+ProcessKeyBinding 401 when=1610460622238 modifiers=40 code=2d char=5f(_) false true
+--------------- 160 --------------
+  Tue Jan 12 19:40:22 IST 2021
+ProcessKeyBinding 402 when=1610460622362 modifiers=40 code=2d char=5f(_) false true
+--------------- 161 --------------
+  Tue Jan 12 19:40:22 IST 2021
+ProcessKeyBinding 402 when=1610460622376 modifiers=0 code=10 char=ffff false true
+--------------- 162 --------------
+  Tue Jan 12 19:40:22 IST 2021
+ProcessKeyBinding 401 when=1610460622528 modifiers=0 code=46 char=66(f) false true
+--------------- 163 --------------
+  Tue Jan 12 19:40:22 IST 2021
+ProcessKeyBinding 401 when=1610460622619 modifiers=0 code=41 char=61(a) false true
+--------------- 164 --------------
+  Tue Jan 12 19:40:22 IST 2021
+ProcessKeyBinding 402 when=1610460622641 modifiers=0 code=46 char=66(f) false true
+--------------- 165 --------------
+  Tue Jan 12 19:40:22 IST 2021
+ProcessKeyBinding 402 when=1610460622755 modifiers=0 code=41 char=61(a) false true
+--------------- 166 --

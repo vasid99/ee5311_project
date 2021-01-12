@@ -1,0 +1,43 @@
+*** SPICE deck for cell sta_char_fa_critpath{sch} from library project_kansu3
+*** Created on Sat Jan 09, 2021 18:52:17
+*** Last revised on Tue Jan 12, 2021 19:31:54
+*** Written on Tue Jan 12, 2021 19:33:52 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 0.1, MIN_CAPAC 0.01FF
+
+*** SUBCIRCUIT project_kansu3__fa_c3x_s2x FROM CELL fa_c3x_s2x{sch}
+.SUBCKT project_kansu3__fa_c3x_s2x A B Ci Co_bar gnd S_bar vdd
+Mnmos@0 net@33 B net@40 gnd nmos_HP L=0.022U W=0.132U
+Mnmos@1 S_bar Ci net@33 gnd nmos_HP L=0.022U W=0.132U
+Mnmos@2 net@40 A gnd gnd nmos_HP L=0.022U W=0.132U
+Mnmos@3 net@21 A gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@4 net@21 B gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@5 S_bar Co_bar net@21 gnd nmos_HP L=0.022U W=0.176U
+Mnmos@6 net@21 Ci gnd gnd nmos_HP L=0.022U W=0.176U
+Mnmos@7 Co_bar Ci net@73 gnd nmos_HP L=0.022U W=0.264U
+Mnmos@8 net@73 A gnd gnd nmos_HP L=0.022U W=0.264U
+Mnmos@9 net@73 B gnd gnd nmos_HP L=0.022U W=0.264U
+Mnmos@10 net@67 A gnd gnd nmos_HP L=0.022U W=0.088U
+Mnmos@11 Co_bar B net@67 gnd nmos_HP L=0.022U W=0.088U
+Mpmos@0 net@20 Ci S_bar vdd pmos_HP L=0.022U W=0.264U
+Mpmos@1 net@1 B net@20 vdd pmos_HP L=0.022U W=0.264U
+Mpmos@2 vdd A net@1 vdd pmos_HP L=0.022U W=0.264U
+Mpmos@3 net@25 Co_bar S_bar vdd pmos_HP L=0.022U W=0.352U
+Mpmos@4 vdd A net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@5 vdd B net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@6 vdd Ci net@25 vdd pmos_HP L=0.022U W=0.352U
+Mpmos@7 net@49 Ci Co_bar vdd pmos_HP L=0.022U W=0.528U
+Mpmos@8 vdd A net@49 vdd pmos_HP L=0.022U W=0.528U
+Mpmos@9 vdd B net@49 vdd pmos_HP L=0.022U W=0.528U
+Mpmos@10 vdd A net@62 vdd pmos_HP L=0.022U W=0.176U
+Mpmos@11 net@62 B Co_bar vdd pmos_HP L=0.022U W=0.176U
+.ENDS project_kansu3__fa_c3x_s2x
+
+*** TOP LEVEL CELL: sta_char_fa_critpath{sch}
+XCo_bar_load Co_bar_out Co_bar_load_B Co_bar_load_Ci Co_bar_load_Co_bar gnd Co_bar_load_S_bar vdd project_kansu3__fa_c3x_s2x
+XS_bar_load S_bar_load_A S_bar_load_B S_bar_out S_bar_load_Co_bar gnd S_bar_load_S_bar vdd project_kansu3__fa_c3x_s2x
+Xdut A_in B_in Ci_in Co_bar_out gnd S_bar_out vdd project_kansu3__fa_c3x_s2x
+
+* Spice Code nodes in cell cell 'sta_char_fa_critpath{sch}'
+.include "../spice_scripts/char_fa_critdiag.txt"
+.END

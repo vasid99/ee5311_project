@@ -1,1 +1,0 @@
-V(fa_s_bar_0_7) V(fa_s_bar_1_6) V(fa_s_bar_2_5) V(fa_s_bar_3_4) V(fa_s_bar_4_3) V(fa_s_bar_5_2) V(fa_s_bar_6_1) V(fa_co_bar_7_0) V(fa_co_bar_7_1) V(fa_co_bar_7_2) V(fa_co_bar_7_3) V(fa_co_bar_7_4) V(fa_co_bar_7_5) V(fa_co_bar_7_6) 

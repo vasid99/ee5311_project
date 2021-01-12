@@ -1,0 +1,105 @@
+.include "../22nm_HP.pm"
+.params Vdd=1.000000
+vdd vdd gnd dc {Vdd}
+vclk clk gnd PULSE(0 {Vdd} 3500p 100p 100p 2500p 5000p)
+
+Vx0 x0 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+Vx1 x1 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {0*Vdd} 11000p {0*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+Vx2 x2 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {0*Vdd} 11000p {0*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+Vx3 x3 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {0*Vdd} 11000p {0*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+Vx4 x4 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {0*Vdd} 11000p {0*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+Vx5 x5 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {0*Vdd} 11000p {0*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+Vx6 x6 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {0*Vdd} 11000p {0*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+Vx7 x7 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {0*Vdd} 11000p {0*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+
+Vy0 y0 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {1*Vdd} 21000p {1*Vdd} )
+Vy1 y1 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {0*Vdd} 21000p {0*Vdd} )
+Vy2 y2 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {0*Vdd} 21000p {0*Vdd} )
+Vy3 y3 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {0*Vdd} 21000p {0*Vdd} )
+Vy4 y4 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {0*Vdd} 21000p {0*Vdd} )
+Vy5 y5 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {0*Vdd} 21000p {0*Vdd} )
+Vy6 y6 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {0*Vdd} 21000p {0*Vdd} )
+Vy7 y7 gnd PWL(1000p 0 1200p {0*Vdd} 6000p {0*Vdd} 6200p {1*Vdd} 11000p {1*Vdd} 11200p {1*Vdd} 16000p {1*Vdd} 16200p {0*Vdd} 21000p {0*Vdd} )
+
+.meas tran val_0_z0 find V(z0) at=5800p
+.meas tran val_0_z1 find V(z1) at=5800p
+.meas tran val_0_z2 find V(z2) at=5800p
+.meas tran val_0_z3 find V(z3) at=5800p
+.meas tran val_0_z4 find V(z4) at=5800p
+.meas tran val_0_z5 find V(z5) at=5800p
+.meas tran val_0_z6 find V(z6) at=5800p
+.meas tran val_0_z7 find V(z7) at=5800p
+.meas tran val_0_z8 find V(z8) at=5800p
+.meas tran val_0_z9 find V(z9) at=5800p
+.meas tran val_0_z10 find V(z10) at=5800p
+.meas tran val_0_z11 find V(z11) at=5800p
+.meas tran val_0_z12 find V(z12) at=5800p
+.meas tran val_0_z13 find V(z13) at=5800p
+.meas tran val_0_z14 find V(z14) at=5800p
+.meas tran val_0_z15 find V(z15) at=5800p
+
+.meas tran delay_0_clk_7_7 trig V(clk) = {0.5*Vdd} td = 3500p cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 3500p cross = 1
+.meas tran delay_0_clk_6_1 trig V(clk) = {0.5*Vdd} td = 3500p cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 3500p cross = 1
+
+.meas tran val_1_z0 find V(z0) at=10800p
+.meas tran val_1_z1 find V(z1) at=10800p
+.meas tran val_1_z2 find V(z2) at=10800p
+.meas tran val_1_z3 find V(z3) at=10800p
+.meas tran val_1_z4 find V(z4) at=10800p
+.meas tran val_1_z5 find V(z5) at=10800p
+.meas tran val_1_z6 find V(z6) at=10800p
+.meas tran val_1_z7 find V(z7) at=10800p
+.meas tran val_1_z8 find V(z8) at=10800p
+.meas tran val_1_z9 find V(z9) at=10800p
+.meas tran val_1_z10 find V(z10) at=10800p
+.meas tran val_1_z11 find V(z11) at=10800p
+.meas tran val_1_z12 find V(z12) at=10800p
+.meas tran val_1_z13 find V(z13) at=10800p
+.meas tran val_1_z14 find V(z14) at=10800p
+.meas tran val_1_z15 find V(z15) at=10800p
+
+.meas tran delay_1_clk_7_7 trig V(clk) = {0.5*Vdd} td = 8500p cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 8500p cross = 1
+.meas tran delay_1_clk_6_1 trig V(clk) = {0.5*Vdd} td = 8500p cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 8500p cross = 1
+
+.meas tran val_2_z0 find V(z0) at=15800p
+.meas tran val_2_z1 find V(z1) at=15800p
+.meas tran val_2_z2 find V(z2) at=15800p
+.meas tran val_2_z3 find V(z3) at=15800p
+.meas tran val_2_z4 find V(z4) at=15800p
+.meas tran val_2_z5 find V(z5) at=15800p
+.meas tran val_2_z6 find V(z6) at=15800p
+.meas tran val_2_z7 find V(z7) at=15800p
+.meas tran val_2_z8 find V(z8) at=15800p
+.meas tran val_2_z9 find V(z9) at=15800p
+.meas tran val_2_z10 find V(z10) at=15800p
+.meas tran val_2_z11 find V(z11) at=15800p
+.meas tran val_2_z12 find V(z12) at=15800p
+.meas tran val_2_z13 find V(z13) at=15800p
+.meas tran val_2_z14 find V(z14) at=15800p
+.meas tran val_2_z15 find V(z15) at=15800p
+
+.meas tran delay_2_clk_7_7 trig V(clk) = {0.5*Vdd} td = 13500p cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 13500p cross = 1
+.meas tran delay_2_clk_6_1 trig V(clk) = {0.5*Vdd} td = 13500p cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 13500p cross = 1
+
+.meas tran val_3_z0 find V(z0) at=20800p
+.meas tran val_3_z1 find V(z1) at=20800p
+.meas tran val_3_z2 find V(z2) at=20800p
+.meas tran val_3_z3 find V(z3) at=20800p
+.meas tran val_3_z4 find V(z4) at=20800p
+.meas tran val_3_z5 find V(z5) at=20800p
+.meas tran val_3_z6 find V(z6) at=20800p
+.meas tran val_3_z7 find V(z7) at=20800p
+.meas tran val_3_z8 find V(z8) at=20800p
+.meas tran val_3_z9 find V(z9) at=20800p
+.meas tran val_3_z10 find V(z10) at=20800p
+.meas tran val_3_z11 find V(z11) at=20800p
+.meas tran val_3_z12 find V(z12) at=20800p
+.meas tran val_3_z13 find V(z13) at=20800p
+.meas tran val_3_z14 find V(z14) at=20800p
+.meas tran val_3_z15 find V(z15) at=20800p
+
+.meas tran delay_3_clk_7_7 trig V(clk) = {0.5*Vdd} td = 18500p cross = 1 targ V(FA_S_bar_7_7) = {0.5*Vdd} td = 18500p cross = 1
+.meas tran delay_3_clk_6_1 trig V(clk) = {0.5*Vdd} td = 18500p cross = 1 targ V(FA_S_bar_6_1) = {0.5*Vdd} td = 18500p cross = 1
+
+
+.tran 0 22000p UIC
