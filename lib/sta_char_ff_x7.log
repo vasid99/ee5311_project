@@ -1,0 +1,3 @@
+Circuit: *** SPICE deck for cell sta_char_ff_x7{sch} from library project
+
+Per .tran options, skipping operating point for transient analysis.
