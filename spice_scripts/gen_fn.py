@@ -3,8 +3,8 @@ from sys import argv
 
 input_width_x = 8
 input_width_y = 8
-inputs_x = [0,1,-1,-1]
-inputs_y = [0,-1,-1,1]
+inputs_x = [0,1,-1,-1,1]
+inputs_y = [0,-1,-1,1,1]
 
 n = len(inputs_x)
 if n!=len(inputs_y):
@@ -47,12 +47,12 @@ for i in range(n):
 
 # all times in picoseconds
 Vdd = 1
-T0 = 500 # time at PWL initiation
-T  = 5000 # time per combination
-T0_clk = 1000 # time at PWL initiation for clock
-dt = 200  # rise & fall time
-dt_clk = 100 # rise & fall time for clock
-Tsim = 2*max(T0,T0_clk) + (n+3)*T
+T0 = 60 # time at PWL initiation
+T  = 650 # time per combination
+T0_clk = 120 # time at PWL initiation for clock
+dt = 24  # rise & fall time
+dt_clk = 12 # rise & fall time for clock
+Tsim = 2*max(T0,T0_clk) + n*T#(n+3)*T
 
 incpath = "../22nm_HP.pm"
 header=".include \"%s\"\n.params Vdd=%f\nvdd vdd gnd dc {Vdd}\nvclk clk gnd PULSE(0 {Vdd} %dp %dp %dp %dp %dp)\n"%(incpath,Vdd,T0_clk,dt_clk,dt_clk,T//2,T)
@@ -79,7 +79,7 @@ for i in range(input_width_y):
 
 meascode = ""
 t = T0
-tclk = T0_clk
+tclk = T0_clk+T//2
 for num in range(n):
 	if dbg:
 		for i in range(input_width_x*input_width_y):

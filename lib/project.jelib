@@ -473,7 +473,7 @@ Ez15||D5G0.75;X1.5;|pin@48||O
 X
 
 # Cell csm_non_pipelined;1{sch}
-Ccsm_non_pipelined;1{sch}||schematic|1608638714421|1610438170759|
+Ccsm_non_pipelined;1{sch}||schematic|1608638714421|1610516336495|
 Iand1x;1{ic}|and1x@0||111.5|140|RRR||D5G4;
 Iand1x;1{ic}|and1x@7||-113.5|140|RRR||D5G4;
 Iand1x;1{ic}|and1x@15||-112.5|108|RRR||D5G4;
@@ -1727,7 +1727,7 @@ NWire_Pin|pin@1547||110.5|-80||||
 NWire_Pin|pin@1549||-80.5|-91||||
 NWire_Pin|pin@1550||111.5|-97.5||||
 NWire_Pin|pin@1551||100|-84||||
-Ngeneric:Invisible-Pin|pin@1553||-201.5|79.5|||||SIM_spice_card(D5G1;)S".include \"S:/DIC_sims/22nm_HP.pm\""
+Ngeneric:Invisible-Pin|pin@1553||-201.5|79.5|||||SIM_spice_card(D5G1;)S".include \"../spice_scripts/sim_test_1.txt\""
 NWire_Pin|pin@1554||77.5|-129.5||||
 NWire_Pin|pin@1556||78|-124.5||||
 NWire_Pin|pin@1557||78|-129.5||||

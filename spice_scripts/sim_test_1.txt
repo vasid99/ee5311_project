@@ -1,0 +1,41 @@
+.include "../22nm_HP.pm"
+.params Vdd=1.000000
+vdd vdd gnd dc {Vdd}
+vclk clk gnd PULSE(0 {Vdd} 100p 10p 10p 250p 500p)
+
+Vx0 x0 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vx1 x1 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vx2 x2 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vx3 x3 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vx4 x4 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vx5 x5 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vx6 x6 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vx7 x7 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+
+Vy0 y0 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vy1 y1 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vy2 y2 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vy3 y3 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vy4 y4 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vy5 y5 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vy6 y6 gnd PWL(50p 0 70p {1*Vdd} 550p {1*Vdd} )
+Vy7 y7 gnd PWL(50p 0 70p {0*Vdd} 550p {0*Vdd} )
+
+.meas tran val_0_z0 find V(z0) at=530p
+.meas tran val_0_z1 find V(z1) at=530p
+.meas tran val_0_z2 find V(z2) at=530p
+.meas tran val_0_z3 find V(z3) at=530p
+.meas tran val_0_z4 find V(z4) at=530p
+.meas tran val_0_z5 find V(z5) at=530p
+.meas tran val_0_z6 find V(z6) at=530p
+.meas tran val_0_z7 find V(z7) at=530p
+.meas tran val_0_z8 find V(z8) at=530p
+.meas tran val_0_z9 find V(z9) at=530p
+.meas tran val_0_z10 find V(z10) at=530p
+.meas tran val_0_z11 find V(z11) at=530p
+.meas tran val_0_z12 find V(z12) at=530p
+.meas tran val_0_z13 find V(z13) at=530p
+.meas tran val_0_z14 find V(z14) at=530p
+.meas tran val_0_z15 find V(z15) at=530p
+
+.tran 0 2200p UIC

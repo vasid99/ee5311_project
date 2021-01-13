@@ -1,0 +1,42 @@
+Circuit: *** SPICE deck for cell csm_non_pipelined{sch} from library project
+
+Vy7: Removing PWL point (7e-011,0)
+WARNING: Less than two connections to node CLK.  This node is used by VCLK.
+Per .tran options, skipping operating point for transient analysis.
+
+val_0_z0: v(z0)=0.999926 at 5.3e-010
+val_0_z1: v(z1)=0.000951696 at 5.3e-010
+val_0_z2: v(z2)=0.00038102 at 5.3e-010
+val_0_z3: v(z3)=0.0013405 at 5.3e-010
+val_0_z4: v(z4)=0.00038103 at 5.3e-010
+val_0_z5: v(z5)=0.00133839 at 5.3e-010
+val_0_z6: v(z6)=0.000381012 at 5.3e-010
+val_0_z7: v(z7)=0.999627 at 5.3e-010
+val_0_z8: v(z8)=0.999925 at 5.3e-010
+val_0_z9: v(z9)=0.999707 at 5.3e-010
+val_0_z10: v(z10)=0.999925 at 5.3e-010
+val_0_z11: v(z11)=0.999701 at 5.3e-010
+val_0_z12: v(z12)=0.999925 at 5.3e-010
+val_0_z13: v(z13)=0.999669 at 5.3e-010
+val_0_z14: v(z14)=0.999924 at 5.3e-010
+val_0_z15: v(z15)=0.999744 at 5.3e-010
+
+
+Date: Wed Jan 13 11:10:54 2021
+Total elapsed time: 85.461 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2590
+traniter = 2590
+tranpoints = 1173
+accept = 1146
+rejected = 27
+matrix size = 8523
+fillins = 1838
+solver = Normal
+Thread vector: 55718.3/20112.2[4] 5931.1/4864.2[4] 1589.5/2914.2[1] 555.3/2724.4[1]  2592/500
+Matrix Compiler1: 1.62 MB object code size  8701.5/2522.8/[1452.0]
+Matrix Compiler2: 1.12 MB object code size  5457.7/3922.9/[947.5]
+
